@@ -262,7 +262,7 @@ on post-fs-data
     mkdir /data/vendor/camera 0770 camera camera
 
     # Create directory for mm-qcamera-daemon
-    mkdir /data/misc/camera 0770 camera camera
+    mkdir /data/vendor/qcam 0770 camera camera
 
     # create QDMA dropbox
     mkdir /data/vendor/qdmastats 0700 system system
