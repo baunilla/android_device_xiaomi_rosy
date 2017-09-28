@@ -159,7 +159,6 @@ on boot
     mkdir /persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
-    restorecon_recursive /mnt/vendor/persist
 
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
