@@ -158,23 +158,14 @@ service vendor.imsrcsservice /system/vendor/bin/imsrcsd
 on property:vendor.ims.DATA_DAEMON_STATUS=1
    restart vendor.ims_rtp_daemon
 
-on property:init.svc.surfaceflinger=stopped
-    stop ppd
+on property:init.svc.vendor.hwcomposer-2-1=stopped
+    stop vendor.ppd
 
-on property:init.svc.surfaceflinger=running
-    start ppd
+on property:init.svc.vendor.hwcomposer-2-1=running
+    start vendor.ppd
 
-on property:init.svc.surfaceflinger=restarting
-    stop ppd
-
-on property:init.svc.zygote=stopped
-    stop ppd
-
-on property:init.svc.zygote=running
-    start ppd
-
-on property:init.svc.zygote=restarting
-    stop ppd
+on property:init.svc.vendor.hwcomposer-2-1=restarting
+    stop vendor.ppd
 
 service energy-awareness /system/vendor/bin/energy-awareness
     class main
@@ -215,7 +206,7 @@ on boot
 # access permission for wlan
     chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
-service ppd /vendor/bin/mm-pp-dpps
+service vendor.ppd /vendor/bin/mm-pp-dpps
     class late_start
     user system
     group system graphics
