@@ -57,6 +57,8 @@ on init
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
+    # Disable sched autogroup
+    write /proc/sys/kernel/sched_autogroup_enabled 0
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
