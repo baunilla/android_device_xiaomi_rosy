@@ -67,6 +67,9 @@ on boot
     write /sys/module/g_android/parameters/mtp_tx_req_len 131072 
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
 
+on property:persist.vendor.usb.config=*
+    setprop persist.sys.usb.config ${persist.vendor.usb.config}
+
 # Following are the parameters required for usb functionality. They provide configurable options like
 # product_id/vendor id and allows specifying required functions:
 #
