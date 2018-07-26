@@ -591,5 +591,9 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
+#Set gpu available frequencies property
+on property:vendor.gpu.available_frequencies=*
+    setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
+
 on property:dev.bootcomplete=1
     swapon_all /vendor/etc/fstab.qcom
