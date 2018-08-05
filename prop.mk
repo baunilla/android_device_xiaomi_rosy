@@ -119,6 +119,7 @@ persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.iwlan_operation_mode=legacy \
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 service.qti.ims.enabled=1
 
 # Recovery
