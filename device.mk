@@ -297,8 +297,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
-    init.target.rc \
+    init.recovery.qcom.rc \
+    init.recovery.qcom.usb.rc \
     init.rosy.rc \
+    init.target.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
