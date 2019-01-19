@@ -15,6 +15,9 @@
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
+# Light HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_rosy u:object_r:hal_light_default_exec:s0
+
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
 

@@ -1,3 +1,4 @@
 subdirs = [
-    "fingerprint"
+    "fingerprint",
+    "light",
 ]
