@@ -1,7 +1,7 @@
 [
  {
-   "repository": "android_kernel_xiaomi_msm8953",
-   "target_path": "kernel/xiaomi/msm8953"
+   "repository": "android_kernel_xiaomi_rosy",
+   "target_path": "kernel/xiaomi/rosy"
  },
  {
    "repository": "android_packages_resources_devicesettings",
