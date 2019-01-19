@@ -1,5 +1,5 @@
 #
-# system.prop for msm8953-common
+# system.prop for rosy
 #
 
 # Audio
@@ -13,6 +13,8 @@ persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=true \
 persist.vendor.bt.enable.splita2dp=false \
+ro.config.media_vol_steps=25 \
+ro.config.vc_call_vol_steps=15 \
 ro.vendor.audio.sdk.fluencetype=fluence \
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.flac.sw.decoder.24bit=true \
@@ -46,7 +48,7 @@ ro.qualcomm.bt.hci_transport=smd
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
 camera.display.umax=1920x1080 \
-camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.whatsapp \
 camera.lowpower.record.enable=1 \
 media.camera.ts.monotonic=1 \
 persist.camera.gyro.disable=0 \
@@ -78,7 +80,7 @@ persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
-ro.sf.lcd_density=480
+ro.sf.lcd_density=320
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \

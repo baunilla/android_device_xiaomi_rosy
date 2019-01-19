@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,28 +14,20 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+# Inherit proprietary vendor files
+$(call inherit-product, vendor/xiaomi/rosy/rosy-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    Bluetooth \
-    Settings \
-    SettingsProvider \
-    SystemUI \
-    framework-res \
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1440
+TARGET_SCREEN_WIDTH := 720
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -234,12 +226,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
-# Keymaster HAL
+# Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
 
-# Lights
+# Light
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_rosy
 
@@ -286,7 +278,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/xiaomi/msm8953-common/prop.mk
+-include device/xiaomi/rosy/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -305,7 +297,7 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
-# RenderScript HAL
+# RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
