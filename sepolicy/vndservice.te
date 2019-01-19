@@ -1,0 +1,2 @@
+#============= vndservice ==============
+type goodix_fingerprint_vndservice, vndservice_manager_type;

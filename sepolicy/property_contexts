@@ -1,0 +1,19 @@
+#============= property_contexts ==============
+# Camera
+persist.camera.            u:object_r:camera_prop:s0
+
+# Fingerprint
+sys.fp.goodix					u:object_r:fingerprint_prop:s0
+sys.fp.vendor					u:object_r:fingerprint_prop:s0
+
+# IMS
+ctl.imsrcsd					u:object_r:ctl_vendor_imsrcsservice_prop:s0
+
+# MPCTL
+sys.post_boot.parsed       u:object_r:vendor_mpctl_prop:s0
+
+# Netmgrd
+persist.net.doxlat         u:object_r:vendor_xlat_prop:s0
+
+# Tee
+sys.listeners.registered   u:object_r:vendor_tee_listener_prop:s0

@@ -15,6 +15,13 @@
 /data/gf_data(/.*)?                             u:object_r:gx_fpd_data_file:s0
 /persist/data/gxfp(/.*)?			u:object_r:gx_fpd_data_file:s0
 
+# DRM
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey               u:object_r:hal_drm_clearkey_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine               u:object_r:hal_drm_widevine_exec:s0
+
+# Ir
+/dev/peel_ir					u:object_r:lirc_device:s0
+
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_rosy u:object_r:hal_light_default_exec:s0
 

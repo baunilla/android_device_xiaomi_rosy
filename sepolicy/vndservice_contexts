@@ -1,0 +1,2 @@
+#============= vnd_service_contexts ==============
+android.hardware.fingerprint.IGoodixFingerprintDaemon			u:object_r:goodix_fingerprint_vndservice:s0
