@@ -74,7 +74,7 @@ static uint32_t getBrightness(const LightState& state) {
     return (77 * red + 150 * green + 29 * blue) >> 8;
 }
 
-static void handleBacklight(Type /* type */, const LightState& state) {
+static void handleBacklight(Type, const LightState& state) {
     set(LCD_LED BRIGHTNESS, getBrightness(state) * LCD_BRIGHTNESS_SCALE);
 }
 
@@ -107,12 +107,12 @@ static std::vector<std::pair<Type, LightState>> notificationStates = {
 };
 
 static void handleNotification(Type type, const LightState& state) {
-    for(auto it : notificationStates) {
+    for (auto it : notificationStates) {
         if (it.first == type) {
             it.second = state;
         }
 
-        if  (isLit(it.second)) {
+        if (isLit(it.second)) {
             setNotification(it.second);
             return;
         }
@@ -121,14 +121,14 @@ static void handleNotification(Type type, const LightState& state) {
     setNotification(offState);
 }
 
-static std::map<Type, std::function<void(Type type, const LightState&)>> lights = {
+static std::map<Type, std::function<void(Type, const LightState&)>> lights = {
     { Type::ATTENTION, handleNotification },
     { Type::NOTIFICATIONS, handleNotification },
     { Type::BATTERY, handleNotification },
     { Type::BACKLIGHT, handleBacklight },
 };
 
-} // anonymous namespace
+}  // anonymous namespace
 
 namespace android {
 namespace hardware {
