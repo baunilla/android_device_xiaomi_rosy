@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device name="Android">
+    <item name="screen.on">63</item>
+    <item name="screen.full">261</item>
+    <array name="cpu.speeds">
+        <value>652800</value>
+        <value>1036800</value>
+        <value>1401600</value>
+        <value>1689600</value>
+        <value>1804800</value>
+    </array>
+    <array name="cpu.active">
+        <value>177</value>
+        <value>195</value>
+        <value>259</value>
+        <value>307</value>
+        <value>353</value>
+    </array>
+    <item name="cpu.awake">1.6</item>
+    <item name="cpu.idle">1.6</item>
+    <item name="battery.capacity">3300</item>
+</device>
