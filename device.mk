@@ -302,7 +302,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh \
+    init.goodix.sh \
     init.qcom.post_boot.sh
 
 # RenderScript
