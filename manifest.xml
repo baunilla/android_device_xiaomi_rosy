@@ -463,6 +463,7 @@
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
+            <instance>UimLpa1</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -536,4 +537,4 @@
     <sepolicy>
         <version>0.0</version>
     </sepolicy>
-</manifest> 
+</manifest>
