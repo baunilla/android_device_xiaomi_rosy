@@ -1,7 +1,6 @@
 # Bluetooth
 /(vendor|system/vendor)/bin/hci_qcomm_init	u:object_r:bluetooth_loader_exec:s0
 
-
 # Fingerprint HIDL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_rosy u:object_r:hal_fingerprint_default_exec:s0
 

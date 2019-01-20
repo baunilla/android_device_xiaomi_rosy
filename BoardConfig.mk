@@ -53,7 +53,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/rosy
 TARGET_KERNEL_CONFIG := rosy-wow_defconfig
 
 # ANT
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
