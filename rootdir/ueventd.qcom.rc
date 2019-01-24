@@ -277,6 +277,6 @@
 # Kmsg device
 /dev/kmsg                                               0620   root       system 
 
-# lirc
-/dev/lirc0                0660   system     system
-/dev/peel_ir              0660   system     system
+# spi infrared
+/dev/spidev7.1            0660  system system
+/dev/spidev6.1            0660  system system
