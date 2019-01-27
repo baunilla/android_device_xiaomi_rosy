@@ -197,7 +197,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware
+    /vendor/firmware_mnt:/firmware \
+    /mnt/vendor/persist:/persist
 TARGET_USES_MKE2FS := true
 
 # Peripheral manager
