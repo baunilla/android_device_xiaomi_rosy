@@ -1,22 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
-    <item name="screen.on">63</item>
-    <item name="screen.full">261</item>
-    <array name="cpu.speeds">
+    <item name="none">0</item>
+    <item name="screen.on">37.6</item>
+    <item name="screen.full">302.7</item>
+    <item name="bluetooth.active">0.1</item>
+    <item name="bluetooth.on">0.3</item>
+    <item name="wifi.on">0.1</item>
+    <item name="wifi.active">250.5</item>
+    <item name="wifi.scan">77.5</item>
+    <item name="dsp.audio">19.8</item>
+    <item name="dsp.video">75</item>
+    <item name="camera.flashlight">193.1</item>
+    <item name="camera.avg">444.7</item>
+    <item name="gps.on">71.7</item>
+    <item name="radio.active">306</item>
+    <item name="radio.scanning">28</item>
+    <array name="radio.on">
+        <value>2.26</value>
+        <value>2.26</value>
+    </array>
+    <array name="cpu.clusters.cores">
+        <value>4</value>
+        <value>4</value>
+    </array>
+    <array name="cpu.core_speeds.cluster0">
         <value>652800</value>
         <value>1036800</value>
         <value>1401600</value>
         <value>1689600</value>
         <value>1804800</value>
     </array>
-    <array name="cpu.active">
-        <value>177</value>
-        <value>195</value>
-        <value>259</value>
-        <value>307</value>
-        <value>353</value>
+    <array name="cpu.core_speeds.cluster1">
+        <value>652800</value>
+        <value>1036800</value>
+        <value>1401600</value>
+        <value>1689600</value>
+        <value>1804800</value>
     </array>
-    <item name="cpu.awake">1.6</item>
-    <item name="cpu.idle">1.6</item>
+    <array name="cpu.core_power.cluster0">
+        <value>13.66</value>
+        <value>18.69</value>
+        <value>20.75</value>
+        <value>24.09</value>
+        <value>26.26</value>
+    </array>
+    <array name="cpu.core_power.cluster1">
+        <value>13.66</value>
+        <value>18.69</value>
+        <value>20.75</value>
+        <value>24.09</value>
+        <value>26.26</value>
+    </array>
+    <item name="cpu.idle">3.11</item>
+    <item name="cpu.active">6.33</item>
+    <array name="memory.bandwidths">
+        <value>22.7</value>
+    </array>
     <item name="battery.capacity">3300</item>
 </device>
