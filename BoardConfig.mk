@@ -227,10 +227,6 @@ else
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 endif
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/lib64/lib-imsvideocodec.so|libshim_ims.so
-
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
