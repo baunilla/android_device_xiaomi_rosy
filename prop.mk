@@ -82,7 +82,6 @@ debug.sf.hw=0 \
 debug.sf.latch_unsignaled=1 \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
-persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
@@ -222,3 +221,8 @@ persist.sys.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# WiFi Display
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.debug.wfd.enable=1 \
+persist.sys.wfd.virtual=0
