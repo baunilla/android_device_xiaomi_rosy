@@ -145,6 +145,7 @@ ro.gps.agps_provider=1
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
+debug.media.codec2=2 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
