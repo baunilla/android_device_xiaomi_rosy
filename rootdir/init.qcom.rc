@@ -672,4 +672,4 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     interface android.hardware.audio@2.0::IDevicesFactory default
 
 on property:dev.bootcomplete=1
-    setprop sys.io.scheduler "bfq"
+    swapon_all /vendor/etc/fstab.qcom
