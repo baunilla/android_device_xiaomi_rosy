@@ -1,4 +1,6 @@
 #============= mm-qcamerad ==============
+set_prop(mm-qcamerad, camera_prop);
+
 typeattribute mm-qcamerad data_between_core_and_vendor_violators;
 
 allow mm-qcamerad camera_data_file:sock_file { create unlink };
