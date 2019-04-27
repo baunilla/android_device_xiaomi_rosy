@@ -1,1 +1,2 @@
+#============= rild ==============
 allow rild rild_file:file r_file_perms;

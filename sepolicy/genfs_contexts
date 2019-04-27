@@ -11,6 +11,3 @@ genfscon sysfs /devices/soc/msm-bcl-19/power_supply                u:object_r:sy
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
-
-# Touchscreen
-genfscon proc /touchpanel	u:object_r:proc_touchpanel:s0

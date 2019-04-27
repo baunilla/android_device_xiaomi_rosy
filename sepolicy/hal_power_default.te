@@ -1,3 +1,2 @@
-# Allow writing to files in /proc/touchpanel
-allow hal_power_default proc_touchpanel:dir search;
-allow hal_power_default proc_touchpanel:file rw_file_perms;
+#============= hal_power_default ==============
+allow hal_power_default proc:file rw_file_perms;

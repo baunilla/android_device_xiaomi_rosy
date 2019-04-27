@@ -1,3 +1,4 @@
+#============= rmt_storage ==============
 # debugfs access
 userdebug_or_eng(`
   allow rmt_storage debugfs_rmt:dir search;
