@@ -2,6 +2,7 @@
 typeattribute ueventd data_between_core_and_vendor_violators;
 
 allow ueventd fpc_sysfs:file { open read write };
+allow ueventd spidev_file:chr_file { create getattr setattr };
 allow ueventd tmpfs:blk_file { getattr setattr };
 allow ueventd wifi_vendor_data_file:dir { search open read };
 allow ueventd wifi_vendor_data_file:file { getattr open read };
