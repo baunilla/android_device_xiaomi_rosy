@@ -64,7 +64,7 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.cne.feature=1 \
+persist.vendor.cne.feature=1 \
 persist.dpm.feature=1
 
 # Coresight
@@ -153,7 +153,6 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.sys.fw.dex2oat_thread_count=4 \
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Netmgrd
@@ -177,34 +176,20 @@ persist.rild.nitz_short_ons_3=""
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
-persist.data.iwlan.enable=true \
-persist.dbg.ims_volte_enable=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=0 \
-persist.radio.apm_sim_not_pwdn=1 \
-persist.radio.calls.on.ims=0 \
-persist.radio.csvt.enabled=false \
-persist.radio.force_on_dc=true \
-persist.radio.ignore_dom_time=5 \
-persist.radio.hw_mbn_update=0 \
-persist.radio.jbims=0 \
-persist.radio.mt_sms_ack=20 \
+persist.dbg.wfc_avail_ovr=1 \
+persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.radio.multisim.config=dsds \
-persist.radio.schd.cache=3500 \
-persist.radio.sw_mbn_update=0 \
-persist.radio.videopause.mode=1 \
-persist.vendor.ims.dropset_feature=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
-ril.subscription.types=RUIM \
+ril.subscription.types=NV,RUIM \
 rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,22 \
-service.qti.ims.enabled=1 \
-telephony.lteOnCdmaDevice=1
+ro.telephony.default_network=22,20 \
+service.qti.ims.enabled=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
