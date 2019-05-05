@@ -84,7 +84,7 @@ start_msm_irqbalance_8939()
 {
 	if [ -f /vendor/bin/msm_irqbalance ]; then
 		case "$platformid" in
-		    "239" | "293" | "294" | "295" | "304" | "338" | "313" |"353")
+		    "239" | "293" | "294" | "295" | "304" | "313" |"353")
 			start vendor.msm_irqbalance;;
 		    "349" | "350" )
 			start vendor.msm_irqbal_lb;;
@@ -99,7 +99,7 @@ start_msm_irqbalance_msmnile()
          fi
 }
 
-start_msm_irqbalance660()
+start_msm_irqbalance()
 {
 	if [ -f /vendor/bin/msm_irqbalance ]; then
 		case "$platformid" in
@@ -108,13 +108,6 @@ start_msm_irqbalance660()
 		    "318" | "327" | "385")
 			start vendor.msm_irqbl_sdm630;;
 		esac
-	fi
-}
-
-start_msm_irqbalance()
-{
-	if [ -f /vendor/bin/msm_irqbalance ]; then
-		start vendor.msm_irqbalance
 	fi
 }
 
@@ -197,7 +190,7 @@ case "$target" in
         fi
 
         case "$soc_id" in
-             "317" | "324" | "325" | "326" | "318" | "327" | "385" )
+             "317" | "324" | "325" | "326" | "318" | "327" )
                   case "$hw_platform" in
                        "Surf")
                                     setprop qemu.hw.mainkeys 0
@@ -214,7 +207,7 @@ case "$target" in
                   esac
                   ;;
        esac
-        start_msm_irqbalance660
+        start_msm_irqbalance
         ;;
     "apq8084")
         platformvalue=`cat /sys/devices/soc0/hw_platform`
@@ -333,6 +326,39 @@ case "$target" in
         ;;
     "msm8953")
 	start_msm_irqbalance_8939
+        if [ -f /sys/devices/soc0/soc_id ]; then
+            soc_id=`cat /sys/devices/soc0/soc_id`
+        else
+            soc_id=`cat /sys/devices/system/soc/soc0/id`
+        fi
+
+        if [ -f /sys/devices/soc0/hw_platform ]; then
+             hw_platform=`cat /sys/devices/soc0/hw_platform`
+        else
+             hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
+        fi
+             product_device=`getprop ro.product.device`
+        case "$soc_id" in
+             "293" | "304" | "338" | "351" | "349" | "350" )
+                  case "$hw_platform" in
+                       "Surf")
+                                    setprop qemu.hw.mainkeys 0
+                                    ;;
+                       "MTP")
+                                    setprop qemu.hw.mainkeys 0
+                                    ;;
+                       "RCM")
+                                    setprop qemu.hw.mainkeys 0
+                                    ;;
+                       "QRD")
+                                   if [ $product_device == "tissot_sprout" ]; then
+                                       setprop qemu.hw.mainkeys 1
+                                   else
+                                       setprop qemu.hw.mainkeys 0
+                                   fi
+                  esac
+                  ;;
+       esac
         ;;
     "sdm710")
         if [ -f /sys/devices/soc0/soc_id ]; then
@@ -347,7 +373,7 @@ case "$target" in
              hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
         case "$soc_id" in
-             "336" | "337" | "347" | "360" | "393" )
+             "336" | "337" | "347" | "360" )
                   case "$hw_platform" in
                        "Surf")
                                     setprop qemu.hw.mainkeys 0
@@ -366,9 +392,6 @@ case "$target" in
        esac
         ;;
 esac
-
-# Set shared touchpanel nodes ownership (these are proc_symlinks to the real sysfs nodes)
-chown -LR system.system /proc/touchpanel
 
 #
 # Make modem config folder and copy firmware config to that folder for RIL
@@ -391,6 +414,22 @@ if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "
     # the group must be root, otherwise this script could not add "W" for group recursively
     chown -hR radio.root /data/vendor/modem_config/*
 fi
+cp /firmware/image/modem_pr/mbn_oin.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_oin.txt
+cp /firmware/image/modem_pr/mbn_ogl.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_ogl.txt
+cp /firmware/image/modem_pr/mbn_og1.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_og1.txt
+#cp /firmware/image/modem_pr/mbn_osa.txt /data/vendor/radio/modem_config
+#chown radio.radio /data/vendor/radio/modem_config/mbn_osa.txt
+cp /firmware/image/modem_pr/mbn_fta.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_fta.txt
+cp /firmware/image/modem_pr/mbn_fin.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_fin.txt
+cp /firmware/image/modem_pr/mbn_fgl.txt /data/vendor/radio/modem_config
+chown radio.radio /data/vendor/radio/modem_config/mbn_fgl.txt
+#cp /firmware/image/modem_pr/mbn_fsa.txt /data/vendor/radio/modem_config
+#chown radio.radio /data/vendor/radio/modem_config/mbn_fsa.txt
 chmod g-w /data/vendor/modem_config
 setprop ro.vendor.ril.mbn_copy_completed 1
 
