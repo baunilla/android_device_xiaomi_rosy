@@ -393,6 +393,9 @@ case "$target" in
         ;;
 esac
 
+# Remove recovery cache from persist
+rm -rf /mnt/vendor/persist/cache/recovery
+
 #
 # Make modem config folder and copy firmware config to that folder for RIL
 #
