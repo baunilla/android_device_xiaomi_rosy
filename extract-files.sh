@@ -64,4 +64,15 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+# Always set 0 (Off) as CDS mode in iface_util_set_cds_mode
+
+BLOB_IFACE_MODULES="$DEVICE_BLOB_ROOT"/vendor/lib/libmmcamera2_iface_modules.so
+
+sed -i -e 's|\xfd\xb1\x20\x68|\xfd\xb1\x00\x20|g' "$BLOB_IFACE_MODULES"
+PATTERN_FOUND=$(hexdump -ve '1/1 "%.2x"' "$BLOB_IFACE_MODULES" | grep -E -o "fdb10020" | wc -l)
+if [ $PATTERN_FOUND != "1" ]; then
+	echo "Critical blob modification weren't applied on ${2}!"
+	exit;
+fi
+
 "$MY_DIR"/setup-makefiles.sh
