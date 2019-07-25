@@ -1,4 +1,4 @@
-/* Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2017, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -97,7 +97,7 @@ typedef struct {
     qcamera_hal3_meta_pp_buffer_t *metaBuffer;
 }ReprocessBuffer;
 
-#define MAX_HAL3_EXIF_TABLE_ENTRIES 23
+#define MAX_HAL3_EXIF_TABLE_ENTRIES 50
 class QCamera3Exif
 {
 public:
