@@ -45,7 +45,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := rosy
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="rosy-user 7.1.2 N2G47H V9.2.3.0.NDAMIEK release-keys"
+    PRIVATE_BUILD_DESC="rosy-user 8.1.0 OPM1.171019.026 V10.3.2.0.ODAMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/rosy/rosy:7.1.2/N2G47H/V9.2.3.0.NDAMIEK:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/rosy/rosy:8.1.0/OPM1.171019.026/V10.3.2.0.ODAMIXM:user/release-keys"
