@@ -240,12 +240,12 @@ function configure_zram_parameters() {
 
     if [ -f /sys/block/zram0/disksize ]; then
         if [ $MemTotal -le 524288 ]; then
-            echo 1610612736 > /sys/block/zram0/disksize
+            echo 402653184 > /sys/block/zram0/disksize
         elif [ $MemTotal -le 1048576 ]; then
-            echo 1610612736 > /sys/block/zram0/disksize
+            echo 805306368 > /sys/block/zram0/disksize
         else
             # Set Zram disk size=1GB for >=2GB Non-Go targets.
-            echo 1610612736 > /sys/block/zram0/disksize
+            echo 1073741824 > /sys/block/zram0/disksize
         fi
         mkswap /dev/block/zram0
         swapon /dev/block/zram0 -p 32758
