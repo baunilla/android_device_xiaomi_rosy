@@ -549,7 +549,8 @@ service vendor.dataadpl /system/vendor/bin/adpl
 service vendor.sensors /vendor/bin/sscrpcd
     class core
     user system
-    group system
+    group system wakelock
+    capabilities BLOCK_SUSPEND
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
