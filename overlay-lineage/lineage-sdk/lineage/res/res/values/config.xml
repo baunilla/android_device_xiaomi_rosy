@@ -17,17 +17,8 @@
 -->
 <resources>
 
-    <!-- Display mode remapping table.
-         If the mode names returned by the backend do not match
-         the predefined and translated strings in the Settings
-         app, they can be remapped here. The format is
-         "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>PM0:Default</item>
-        <item>CE_skin_1228:Miui</item>
-        <item>CE_cold_1228:Cold</item>
-        <item>CE_warm_1228:Warm</item>
-    </string-array>
+    <!-- Default values for LiveDisplay -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
 
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
