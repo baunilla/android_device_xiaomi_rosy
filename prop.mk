@@ -193,6 +193,10 @@ ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,22 \
 service.qti.ims.enabled=1
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
