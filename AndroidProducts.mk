@@ -15,3 +15,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_rosy.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_rosy-userdebug \
+    lineage_rosy-eng
