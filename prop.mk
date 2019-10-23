@@ -147,6 +147,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
+media.stagefright.thumbnail.prefer_hw_codecs=true \
 media.stagefright.audio.sink=280 \
 vendor.mm.enable.qcom_parser=1048575 \
 mm.enable.sec.smoothstreaming=true \
