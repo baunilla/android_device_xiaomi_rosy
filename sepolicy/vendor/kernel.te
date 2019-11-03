@@ -1,0 +1,2 @@
+#============= kernel ==============
+allow kernel kernel:capability { kill };
