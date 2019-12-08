@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    libunwind
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
