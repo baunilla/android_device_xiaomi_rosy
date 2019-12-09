@@ -40,11 +40,3 @@ on post-fs-data
     chmod 0666 /dev/spidev7.1
     chmod 0666 /dev/spidev6.1
 
-on property:sys.boot_completed=1
-    start baseband-sh
-
-service baseband-sh /vendor/bin/sh /vendor/etc/set_baseband.sh
-    class late_start
-    user root
-    disabled
-    oneshot
