@@ -132,6 +132,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     camera.msm8953 \
     libmm-qcamera \
+    libshims_camera \
     Snap
 
 # Cgroup and task_profiles
