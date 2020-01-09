@@ -1,6 +1,7 @@
 #============= property_contexts ==============
 # Camera
 persist.camera.            u:object_r:camera_prop:s0
+persist.vendor.camera.dbglog			u:object_r:camera_prop:s0
 
 # Fingerprint
 sys.fp.goodix					u:object_r:fingerprint_prop:s0
