@@ -612,13 +612,6 @@ on property:init.svc.surfaceflinger=restarting
     stop  vendor.hwcomposer-2-1
     start vendor.hwcomposer-2-1
 
-service time_daemon /vendor/bin/time_daemon
-    class main
-    user system
-    group system
-    capabilities SYS_TIME
-    writepid /dev/cpuset/system-background/tasks
-
 service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     override
     class hal
