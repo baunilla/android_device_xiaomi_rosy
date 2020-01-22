@@ -2,9 +2,5 @@
  {
    "repository": "android_kernel_xiaomi_rosy",
    "target_path": "kernel/xiaomi/rosy"
- },
- {
-   "repository": "android_packages_resources_devicesettings",
-   "target_path": "packages/resources/devicesettings"
  }
 ]
