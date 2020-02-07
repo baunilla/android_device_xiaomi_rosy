@@ -34,12 +34,11 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom
-
+    restorecon_recursive /mnt/vendor/persist
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
-    restorecon_recursive /mnt/vendor/persist
 
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
