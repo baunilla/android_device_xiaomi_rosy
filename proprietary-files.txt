@@ -11,7 +11,7 @@ vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
 vendor/lib64/libfastcvopt.so|f5e25aa055a57e23530b858bf7dd204a6009effc
 vendor/lib64/libmdsprpc.so|38de6a53d3c2ff60a253c7c6a0d3b46962e8e194
 
-# ADSP modules - from daisy_sprout pie, PKQ1.180917.001.V10.0.13.0.PDLMIXM
+# ADSP modules - from LA.UM.8.6.r1-02600-89xx.0
 vendor/lib/rfsa/adsp/dirac_resource.dar|d9b3693eab8c520ef859236b8235752188b7cba0
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
@@ -1292,8 +1292,8 @@ vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 
-# Charger - from daisy_sprout pie, PKQ1.180917.001.V10.0.13.0.PDLMIXM
-vendor/bin/hvdcp_opti|7ee82dd264c7c349fb498111a61d5009ae9f0da2
+# Charger - from daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
+vendor/bin/hvdcp_opti|bd0808db92452c5fd7ec272a35924f23fb4ffa01
 
 # CNE - from daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
