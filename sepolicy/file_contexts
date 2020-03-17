@@ -36,6 +36,9 @@
 # Light HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_rosy u:object_r:hal_light_default_exec:s0
 
+# LiveDisplay HAL
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.xiaomi_rosy u:object_r:hal_lineage_livedisplay_qti_exec:s0
+
 # Location
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
 
