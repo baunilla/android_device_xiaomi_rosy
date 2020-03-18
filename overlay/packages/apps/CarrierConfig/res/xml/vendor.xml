@@ -103,6 +103,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="allow_holding_video_call" value="true"/>
         <!-- Config to allow accept one way for video calls -->
         <boolean name="allow_one_way_accept_video_call" value="true"/>
+        <!-- Config for multi anchor conference support  -->
+        <boolean name="carrier_supports_multianchor_conference" value="false"/>
     </carrier_config>
 
     <carrier_config mcc="001" mnc="01">
@@ -113,6 +115,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="202" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
@@ -167,6 +171,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="204" mnc="16">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
@@ -174,6 +180,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="204" mnc="20">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
@@ -236,6 +244,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="216" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
@@ -243,6 +253,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="219" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
 
@@ -271,6 +283,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="230" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
 
@@ -289,6 +303,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="232" mnc="03">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
@@ -296,9 +312,30 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="232" mnc="07">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
+
+    <carrier_config mcc="233" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+    </carrier_config>
+
+    <carrier_config mcc="233" mnc="04">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+    </carrier_config>
+
 
     <carrier_config mcc="234" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -444,6 +481,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="260" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
 
@@ -465,6 +504,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="262" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
@@ -544,6 +585,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="854">
@@ -574,6 +616,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="855">
@@ -604,6 +647,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="856">
@@ -634,6 +678,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="857">
@@ -664,6 +709,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="858">
@@ -694,6 +740,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="859">
@@ -724,6 +771,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="860">
@@ -754,6 +802,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="861">
@@ -784,6 +833,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="862">
@@ -814,6 +864,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="863">
@@ -844,6 +895,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="864">
@@ -874,6 +926,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="865">
@@ -904,6 +957,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="866">
@@ -934,6 +988,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="867">
@@ -964,6 +1019,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="868">
@@ -994,6 +1050,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="869">
@@ -1024,6 +1081,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="870">
@@ -1054,6 +1112,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="871">
@@ -1084,6 +1143,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="872">
@@ -1114,6 +1174,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="873">
@@ -1144,6 +1205,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="405" mnc="874">
@@ -1174,6 +1236,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vowifi_call_quality" value="true" />
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
+        <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
     <carrier_config mcc="440" mnc="10">
@@ -1358,6 +1421,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vilte_data_is_metered_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_disable_clir_over_ut" value="true" />
+        <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="02">
@@ -1439,6 +1504,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="config_update_service_status" value="true"/>
         <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
         <boolean name="config_common_callsettings_support_bool" value="true" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
@@ -1496,6 +1562,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vilte_data_is_metered_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_disable_clir_over_ut" value="true" />
+        <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="07">
@@ -1615,6 +1683,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="vilte_data_is_metered_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_disable_clir_over_ut" value="true" />
+        <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
     </carrier_config>
 
     <carrier_config mcc="460" mnc="10">
@@ -1655,6 +1725,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="config_update_service_status" value="true"/>
         <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
         <boolean name="config_common_callsettings_support_bool" value="true" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
@@ -1684,6 +1755,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="config_auto_retry_cfu_bool" value="true" />
         <boolean name="allow_add_call_during_video_call" value="false" />
+        <boolean name="allow_holding_video_call" value="false" />
         <boolean name="config_common_callsettings_support_bool" value="true" />
         <boolean name="vilte_data_is_metered_bool" value="false" />
         <boolean name="config_enable_video_crbt" value="true" />
