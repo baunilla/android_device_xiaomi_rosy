@@ -51,7 +51,7 @@ vendor/lib64/libqtigef.so|e7f0dfa3cd7252310c9a01f2bc0e4074e6e78871
 vendor/lib64/soundfx/libqcbassboost.so|0d2afd6f2c5b9aa2397f3e1cb3287bf906cf8fb6
 vendor/lib64/soundfx/libqcvirt.so|bb046694512d412d6a04bd95ccb2b573454d9717
 
-# Audio ACDB - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Audio ACDB - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|69d97d52c5ff2a47ef13aeded96af7c5c78e3b13
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|6f6fe990add3c3d5e096a345dad151a134c437b8
@@ -104,7 +104,7 @@ product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 # Bluetooth (Shared) - from LA.UM.8.6.r1-03400-89xx.0
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|027c226838e80a04209e5fb6a8882ce78c3b4222
 
-# Camera - from rosy oreo, OPM1.171019.026.V11.0.1.0.ODAMIXM
+# Camera - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 lib/libmorpho_memory_allocator.so:vendor/lib/libmorpho_memory_allocator.so
 lib/libmorpho_panorama.so:vendor/lib/libmorpho_panorama.so
 lib/libmorpho_panorama_gp.so:vendor/lib/libmorpho_panorama_gp.so
@@ -199,7 +199,7 @@ vendor/lib/libubifocus.so
 vendor/lib/libvideoutils.so
 vendor/lib/libXMFD_AgeGender.so
 
-# Camera actuators - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Camera actuators - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/lib/libactuator_ad5816g.so
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ak7345.so
@@ -221,7 +221,7 @@ vendor/lib/libactuator_ovt_ov12a10_i_dw9763.so
 vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 
-# Camera chromatix - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Camera chromatix - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -1144,7 +1144,7 @@ vendor/lib/libchromatix_sony_imx486_ii_snapshot.so
 vendor/lib/libchromatix_sony_imx486_ii_zsl_preview_dw9714v.so
 vendor/lib/libchromatix_sony_imx486_ii_zsl_video_dw9714v.so
 
-# Camera configs - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Camera configs - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
@@ -1187,7 +1187,7 @@ vendor/etc/camera/s5k5e8_qtech_riva_chromatix.xml
 vendor/etc/camera/s5k5e8_qtech_riva_india_chromatix.xml
 vendor/etc/camera/sony_imx486_ii_chromatix.xml
 
-# Camera eeproms - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Camera eeproms - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_dw9761b_2d_eeprom.so
 vendor/lib/libmmcamera_le2464c_eeprom.so
@@ -1243,7 +1243,7 @@ vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
 vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 
-# Camera isp - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Camera isp - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -1279,7 +1279,7 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Camera firmware - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Camera firmware - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/firmware/cpp_firmware_v1_5_0.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
@@ -1364,11 +1364,11 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so|9dcf75a4877324e4080ac2088e6ca9ca
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|882f4c7eee1b8247d503b185c0240d66e974901a
 vendor/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
 
-# Consumer IR - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Consumer IR - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|b836d25b42b12e88ab0ff4e47c08321a6ddc5285
 lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so|c7f8fb64d8bda3b16f81700b6d0549e5e2d99531
 
-# Display calibration - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Display calibration - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/etc/qdcm_calib_data_ft8006m_boe_5p7_720p_video.xml
 vendor/etc/qdcm_calib_data_ft8613_csot_5p7_720p_video.xml
 vendor/etc/qdcm_calib_data_ft8613_ebbg_5p7_720p_video.xml
@@ -1413,7 +1413,7 @@ vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|75335443a33a06a03eecfa714dfe9f1c0c4df2b1
 vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
-# Fingerprint - from rosy oreo, OPM1.171019.026.V11.0.1.0.ODAMIXM
+# Fingerprint - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 lib/android.hardware.biometrics.fingerprint@2.1.so
 lib64/android.hardware.biometrics.fingerprint@2.1.so
@@ -1547,7 +1547,7 @@ vendor/lib64/libtinyxml2_1.so|cb6f4fb572a28cad293f4b6c5312fcff73ad088b
 vendor/lib/hw/vulkan.msm8953.so|05ccd07ced4f12f8474a1298fbad6790e0436062
 vendor/lib64/hw/vulkan.msm8953.so|f50aea297c956bf22eaf7ee07e3b4e2b524967b4
 
-# Graphics firmware - from rosy oreo, OPM1.171019.026.V10.3.2.0.ODAMIXM
+# Graphics firmware - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
 vendor/firmware/a225_pm4.fw
