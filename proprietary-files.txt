@@ -1292,8 +1292,8 @@ vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 
-# Charger - from daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
-vendor/bin/hvdcp_opti|bd0808db92452c5fd7ec272a35924f23fb4ffa01
+# Charger - from LA.UM.8.6.r1-03400-89xx.0
+vendor/bin/hvdcp_opti|2fb64d374314df12d6461ef61a6268042114dd9f
 
 # CNE - from daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|75e8a824d368cd4172985c884796381327d950da
