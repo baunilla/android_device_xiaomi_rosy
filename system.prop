@@ -26,7 +26,6 @@ debug.sf.latch_unsignaled=1
 debug.egl.hw=0
 persist.hwc.mdpcomp.enable=true
 debug.mdpcomp.logs=0
-dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 debug.enable.sglscale=1
@@ -86,7 +85,7 @@ persist.vendor.data.mode=concurrent
 persist.timed.enable=true
 
 #system prop for Bluetooth SOC type
-ro.bluetooth.library_name=libbluetooth_qti.so
+vendor.qcom.bluetooth.soc=pronto
 persist.vendor.btstack.enable.splita2dp=false
 
 # System property for cabl
@@ -178,7 +177,16 @@ persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 
 #expose aux camera for below packages
-vendor.camera.aux.packagelist=org.codeaurora.snapcam
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
-#set cutoff voltage to 3400mV
-ro.cutoff_voltage_mv=3400
+# Default media volume
+ro.config.media_vol_default=15
+
+# Default volume steps
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=15
+
+# Qualcomm
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.qti.am.reschedule_service=true
+ro.vendor.qti.sys.fw.bservice_enable=true
