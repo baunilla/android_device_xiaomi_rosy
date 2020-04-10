@@ -354,6 +354,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.goodix.sh \
+    init.class_main.sh \
     init.qcom.post_boot.sh
 
 # RenderScript
