@@ -1651,10 +1651,10 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|cbf2dd1cd5cbf0dbb90f1563a7
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|680d4ad1999c8db44ee7d6240dda4ec1873e4c4d
 
 # QMI - from daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
-lib/libdiag_system.so|609b90f226d1644411efe707b904518356186b45
 lib/libqmi_cci_system.so|87a41bdcc65032655a3500b209942691aa593921
-lib64/libdiag_system.so|d99aab8a67dba954f2cb4270ecc5552a25debd97
 lib64/libqmi_cci_system.so|e0f4d78c114f1cdfc9060832954736e83b800bde
+product/lib/libdiag_system.so|609b90f226d1644411efe707b904518356186b45
+product/lib64/libdiag_system.so|d99aab8a67dba954f2cb4270ecc5552a25debd97
 vendor/bin/irsc_util|07f4a90a0fb528c5b883a6865184c7d7239e213d
 vendor/lib/libdiag.so|9dbf63722cba2b473429eeac2690e5d7c0bd2754
 vendor/lib/libdsi_netctrl.so|06f33d3eaa956d045c473d777ca5044c170acca8
