@@ -32,6 +32,11 @@ vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+ro.vendor.bluetooth.wipower=false
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
