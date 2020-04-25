@@ -74,6 +74,7 @@ persist.vendor.qcom.bluetooth.enable.splita2dp=false
 ro.vendor.bluetooth.wipower=false
 
 # Dalvik
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.heapstartsize=16m
 dalvik.vm.heapgrowthlimit=192m
 dalvik.vm.heapsize=512m
