@@ -177,6 +177,13 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    gdxbacktrace \
+    gdxunwind \
+    libshims_goodix \
+    libstdc++.vendor
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
