@@ -206,7 +206,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /vendor/lib/hw/camera.msm8953.so|libshims_camera.so
+    /vendor/lib/hw/camera.msm8953.so|libshims_camera.so \
+    /vendor/lib64/libgoodixfingerprintd_binder.so|libshims_goodix.so
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true

@@ -172,7 +172,10 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    libunwind
+    gdxbacktrace \
+    gdxunwind \
+    libshims_goodix \
+    libstdc++.vendor
 
 # FM
 PRODUCT_PACKAGES += \
