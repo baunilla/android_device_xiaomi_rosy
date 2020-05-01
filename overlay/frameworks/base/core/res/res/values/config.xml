@@ -26,7 +26,7 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
@@ -287,7 +287,7 @@
         <item>"mobile_cbs,12,0,2,60000,true"</item>
         <item>"mobile_emergency,15,0,5,-1,true"</item>
         <item>"bluetooth,7,7,2,-1,true"</item>
-        <item>"ethernet,9,9,4,-1,true"</item>
+        <item>"ethernet,9,9,9,-1,true"</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
@@ -366,11 +366,6 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up.
-         The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
-
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
@@ -410,21 +405,6 @@
          Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
-    <!-- Power Management: Specifies whether to decouple the interactive state of the
-         device from the display on/off state.
-         When false, setInteractive(..., true) will be called before the display is turned on
-         and setInteractive(..., false) will be called after the display is turned off.
-         This mode provides best compatibility for devices that expect the interactive
-         state to be tied to the display state.
-         When true, setInteractive(...) will be called independently of whether the display
-         is being turned on or off.  This mode enables the power manager to reduce
-         clocks and disable the touch controller while the display is on.
-         This resource should be set to "true" when a doze component has been specified
-         to maximize power savings but not all devices support it.
-         Refer to power.h for details.
-    -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
-
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
@@ -451,16 +431,17 @@
          If no value is found for the rat-name in use, the system default will be applied.
     -->
     <string-array name="config_mobile_tcp_buffers">
-        <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
-        <item>lte_ca:2097152,4194304,8388608,4096,1048576,2097152</item>
-        <item>umts:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hspa:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hsupa:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hsdpa:4094,87380,1220608,4096,16384,1220608</item>
-        <item>hspap:4094,87380,1220608,4096,16384,1220608</item>
-        <item>edge:4093,26280,35040,4096,16384,35040</item>
-        <item>gprs:4092,8760,11680,4096,8760,11680</item>
-        <item>evdo:4094,87380,524288,4096,16384,262144</item>
+        <item>"5gnr:2097152,6291456,16777216,512000,2097152,8388608"</item>
+        <item>"lte:2097152,4194304,8388608,262144,524288,1048576"</item>
+        <item>"lte_ca:4096,6291456,12582912,4096,1048576,2097152"</item>
+        <item>"umts:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hspa:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hsupa:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hsdpa:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hspap:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"edge:4093,26280,35040,4096,16384,35040"</item>
+        <item>"gprs:4092,8760,11680,4096,8760,11680"</item>
+        <item>"evdo:4094,87380,524288,4096,16384,262144"</item>
     </string-array>
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
