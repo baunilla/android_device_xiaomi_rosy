@@ -104,7 +104,7 @@ persist.vendor.delta_time.enable=true
 net.tcp.2g_init_rwnd=10
 
 # USB
-persist.sys.usb.config.extra=none
+persist.vendor.usb.config.extra=none
 
 # WiFi
 wifi.interface=wlan0
