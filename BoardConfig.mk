@@ -195,7 +195,10 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
@@ -223,7 +226,6 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib/hw/camera.msm8953.so|libshims_camera.so
 
 # Treble
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 

@@ -312,9 +312,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
-# Properties
--include device/xiaomi/rosy/prop.mk
-
 # QMI
 PRODUCT_PACKAGES += \
     libjson \

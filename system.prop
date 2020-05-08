@@ -179,6 +179,14 @@ persist.vendor.camera.display.lmax=1280x720
 #expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
+# Dalvik
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
+
 # Default media volume
 ro.config.media_vol_default=15
 
@@ -190,3 +198,5 @@ ro.config.vc_call_vol_steps=15
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.am.reschedule_service=true
 ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.va_aosp.support=1
+
