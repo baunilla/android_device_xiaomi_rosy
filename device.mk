@@ -123,7 +123,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4 \
+    android.hardware.camera.device@3.4 \
+    android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.common@1.0 \
