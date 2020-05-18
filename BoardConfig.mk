@@ -104,9 +104,6 @@ TARGET_SUPPORT_HAL1 := false
 # Cpusets
 ENABLE_CPUSETS := true
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Display
 TARGET_SCREEN_DENSITY := 320
 TARGET_USES_ION := true
