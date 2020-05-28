@@ -216,7 +216,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 endif
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-03-01
+VENDOR_SECURITY_PATCH := 2020-05-01
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
