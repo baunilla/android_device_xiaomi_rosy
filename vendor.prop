@@ -6,6 +6,7 @@ persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
+vendor.audio.feature.compr_voip.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.offload.buffer.size.kb=64
