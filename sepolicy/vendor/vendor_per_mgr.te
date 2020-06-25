@@ -1,0 +1,2 @@
+#============= vendor_per_mgr ==============
+allow vendor_per_mgr self:capability net_raw;
