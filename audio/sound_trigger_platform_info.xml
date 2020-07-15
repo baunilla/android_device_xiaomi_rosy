@@ -44,6 +44,9 @@
         <param backend_dai_name="TERT_MI2S_TX" /-->
         <param backend_port_name="SLIM_0_TX" />
         <param backend_dai_name="SLIMBUS_0_TX" />
+        <param concurrent_capture="false" />
+        <param concurrent_voip_call="false" />
+        <param concurrent_voice_call="false" />
     </common_config>
 
     <acdb_ids>
