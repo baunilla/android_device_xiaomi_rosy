@@ -358,6 +358,7 @@ PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.veth_ipa_config.sh \
     init.class_main.sh \
+    init.qcom.sensors.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh
 
