@@ -55,7 +55,6 @@
         <item>1097</item>
         <item>1808</item>
         <item>2981</item>
-        <item>5000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -70,8 +69,8 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>31.49998</item>
-        <item>32.31226</item>
+        <item>33.93999</item>
+        <item>35.93999</item>
         <item>38.786167</item>
         <item>43.30993</item>
         <item>46.851162</item>
@@ -87,7 +86,6 @@
         <item>180.69225</item>
         <item>225.84135</item>
         <item>292.46844</item>
-        <item>377.05084</item>
         <item>481.93427</item>
     </array>
 
