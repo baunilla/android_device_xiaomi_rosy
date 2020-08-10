@@ -49,6 +49,8 @@ persist.vendor.qti.telephony.vt_cam_interface=1
 
 # Display
 ro.opengles.version=196610
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
 
 # DRM
 drm.service.enabled=true
