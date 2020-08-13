@@ -8,6 +8,7 @@ persist.vendor.audio.fluence.voicerec=false \
 ro.vendor.audio.sdk.fluencetype=fluence \
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.flac.sw.decoder.24bit=true \
+vendor.audio.hal.boot.timeout.ms=20000 \
 vendor.audio.offload.buffer.size.kb=64 \
 vendor.audio.offload.gapless.enabled=true \
 vendor.audio.offload.multiaac.enable=true \
