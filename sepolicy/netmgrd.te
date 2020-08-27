@@ -1,4 +1,2 @@
 #============= netmgrd ==============
 set_prop(netmgrd, vendor_xlat_prop)
-allow netmgrd init:unix_stream_socket connectto;
-allow netmgrd property_socket:sock_file write;
