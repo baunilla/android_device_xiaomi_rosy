@@ -38,6 +38,9 @@
 # Location
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
 
+# Power Stats
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock u:object_r:hal_power_stats_default_exec:s0
+
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
 
@@ -50,3 +53,6 @@
 # Sysfs
 /sys/devices(/platform)?/soc/78b6000\.i2c/i2c-2/2-[0-9a-f]+/leds(/.*)?		u:object_r:sysfs_leds:s0
 /sys/devices(/platform)?/soc/leds-qpnp-[0-9]+/leds(/.*)?				u:object_r:sysfs_leds:s0
+
+# Thermal
+/data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0

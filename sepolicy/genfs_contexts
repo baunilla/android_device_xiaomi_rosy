@@ -8,6 +8,8 @@ genfscon sysfs /devices/soc/78b6000.i2c/i2c-2/2-0045/leds/                u:obje
 # Power
 genfscon sysfs /devices/soc/soc:qcom,bcl/power_supply                u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/soc/msm-bcl-19/power_supply                u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/qpnp-fg-18/power_supply                u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/qpnp-smbcharger-17/power_supply                u:object_r:sysfs_batteryinfo:s0
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0

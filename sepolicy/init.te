@@ -1,3 +1,4 @@
 #============= init ==============
 allow init sysfs:file setattr;
+allow init sysfs_batteryinfo:file setattr;
 allow init proc_boot_reason:file r_file_perms;

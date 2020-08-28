@@ -1,0 +1,6 @@
+#============= thermal-engine ==============
+allow thermal-engine init:unix_stream_socket connectto;
+allow thermal-engine property_socket:sock_file write;
+allow thermal-engine sysfs_batteryinfo:dir r_dir_perms;
+allow thermal-engine sysfs_batteryinfo:file rw_file_perms;
+allow thermal-engine system_prop:property_service set;
