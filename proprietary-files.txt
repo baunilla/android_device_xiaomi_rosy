@@ -1550,12 +1550,10 @@ vendor/lib64/libsensor_user_cal.so|aea178debd6562e4f9e352aede494429c68ffcec
 vendor/lib64/sensor_calibrate.so|4bb147013fc7bb41b1009b591a4d91abbc54fb30
 vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
 
-# Thermal - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
-vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
--vendor/lib/libthermalclient.so|6077e27e15d9e3e43fa57d6d5405c49284f48949
--vendor/lib64/libthermalclient.so|12b26d4242b1a8913ddcb511f42a1debb83689af
-vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
-vendor/lib64/libthermalioctl.so|24b22582f3f77769c5fbca06fcc1d3b6533cdf40
+# Thermal - FP3-user-10-8901.3.A.0033.20200815-08150109-release-keys
+vendor/bin/thermal-engine|b031c9df02d5ed57f9155f441a1883b46cdab57b
+-vendor/lib/libthermalclient.so|c0089a7fdd34bc5f3ea0556e5f4a087ab02fc34f
+-vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
 
 # Time services - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
 -vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
