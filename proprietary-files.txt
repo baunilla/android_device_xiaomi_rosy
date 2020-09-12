@@ -1114,6 +1114,10 @@ vendor/lib64/libsecureui.so|dc3ccde15c3bdbc14da9fdc63dbf30973c5fe1b1
 vendor/lib64/libsecureui_svcsock.so|a7fdcd8001d4cdd9a30eb1ccc129324c398cc203
 vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
 
+# DRM - from lmi:10/QKQ1.191117.002/V12.0.3.0.QJKMIXM
+vendor/lib64/libops.so|03dc247cbf3e75f8dedf05b779eb65006f7334cd
+vendor/lib64/libspl.so|609af852a498b0a50eb00f2d75913e0fbcbbaee6
+
 # DRM - Widevine - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|4839355c27e39088e576e382037a6214675a94ca
