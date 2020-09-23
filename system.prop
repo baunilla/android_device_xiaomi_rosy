@@ -88,6 +88,9 @@ ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent
 
+# BPF
+ro.kernel.ebpf.supported=true
+
 #system props for time-services
 persist.timed.enable=true
 
