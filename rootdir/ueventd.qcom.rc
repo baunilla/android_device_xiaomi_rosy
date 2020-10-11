@@ -32,6 +32,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
+/dev/mhi_*_pipe_4         0660   system     system
 
 /dev/genlock              0666   system     system
 /dev/wlan                 0660   wifi       wifi
@@ -40,6 +41,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/kgsl-2d0             0666   root       root
 /dev/kgsl-2d1             0666   root       root
 /dev/ion                  0664   system     system
+/dev/membuf               0664   system     system
 /dev/rtc0                 0660   system     system
 /dev/smd0                 0660   system     system
 /dev/smd4                 0660   system     system
@@ -57,6 +59,10 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ipa_adpl             0660   system     oem_2905
 /dev/synx_device          0660   root       camera
 /dev/hab                  0666   system     system
+/dev/iio:device*          0664   system     system
+
+#permissions for UFS RPMB BSG device node
+/dev/0:0:0:49476          0600   system     system
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
@@ -124,19 +130,22 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/at_usb0              0640   radio      radio
 /dev/at_mdm0              0640   radio      radio
 /dev/video*               0660   system     camera
+/dev/cvp*                 0660   system     camera
 /dev/media*               0660   system     camera
 /dev/v4l-subdev*          0660   system     camera
 /dev/qseecom              0660   system     drmrpc
 /dev/qce                  0660   system     drmrpc
-/dev/smcinvoke            0660   system     system
+/dev/smcinvoke            0660   system     drmrpc
 /dev/qsee_ipc_irq_spss    0660   system     drmrpc
 /dev/seemplog             0660   system     system
 /dev/pft                  0660   system     drmrpc
 /dev/spcom                0660   system     system
+/dev/spss_utils           0660   system     system
 /dev/sp_kernel            0660   system     system
 /dev/sp_nvm               0660   system     system
 /dev/sp_ssr               0660   system     system
 /dev/sp_keymaster         0660   system     system
+/dev/sp_keymaster_ssr     0660   system     system
 /dev/sec_nvm_*            0660   system     system
 /dev/cryptoapp            0660   system     system
 /dev/spdaemon_ssr         0660   system     system
@@ -157,11 +166,17 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/mhi_qdss             0660   system    oem_2902
 /sys/class/qdss_bridge/mhi_qdss  mode      0660     system   oem_2902
 
+#qg
+/dev/qg                   0660  system     system
+/dev/qg_battery           0660  system     system
+
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
 /sys/devices/soc/a000000.qcom,wcnss-wlan/net/wlan0/queues/rx-* rps_cpus           0660   system     system
 /sys/devices/soc/a000000.qcom,wcnss-wlan/net/p2p0/queues/rx-* rps_cpus            0660   system     system
+/sys/devices/platform/soc/18800000.qcom,icnss/net/wlan*/queues/rx-* rps_cpus      0660   system     system
+/sys/devices/platform/soc/1c00000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan*/queues/rx-* rps_cpus      0660   system     system
 /dev/spidev0.0            0660   system     audio
 /dev/i2c-7                0660   system     audio
 /dev/msm_camera/*         0660   system     camera
@@ -172,6 +187,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_vidc_dec_sec     0660   system     audio
 /dev/msm_vidc_enc         0660   system     audio
 /dev/msm_rotator          0660   system     system
+/dev/hw_random            0600   root       root
 /dev/sdsprpc-smd          0660   system     system
 
 #permissions for audio
@@ -213,6 +229,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/tty_sdio_00          0660   system     system
 /dev/ttyGS0               0660   system     system
 /dev/i2c-5                0660   media       media
+/dev/voice_svc            0660   system     audio
 /dev/avtimer              0660   system     audio
 /dev/spidev2.0            0660   system     audio
 /dev/aud_pasthru_adsp     0660   system     audio
@@ -279,6 +296,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # GNSS PPS Device premissions
 /dev/pps*                  0660   gps     gps
+/dev/gnss_sirf             0660   gps     gps
 
 # laser sensor access
 /sys/devices/virtual/input/input*                   enable_ps_sensor 0660  system   input
@@ -318,7 +336,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ramdump*             0640   system     system
 
 # Fingerprint device
-/dev/qbt1000              0660   system     system
+/dev/qbt*                 0660   system     system
+/sys/class/fts/touch_aoi aoi_set 0660 root system
+/sys/class/fts/touch_aoi power_set 0660 root system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
@@ -332,6 +352,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/block/platform/soc/c0c4000.sdhci/by-name/frp       0600   system     system
 /dev/block/platform/soc/1d84000.ufshc/by-name/frp       0600   system     system
 /dev/block/platform/soc/7c4000.sdhci/by-name/frp        0600   system     system
+/dev/block/platform/soc/4744000.sdhci/by-name/frp       0600   system     system
+/dev/block/platform/soc/4804000.ufshc/by-name/frp       0600   system     system
 
 # This is temporary while using SD card for initial bring-up
 /dev/block/platform/soc/8804000.sdhci/by-name/frp       0600   system     system
@@ -343,12 +365,15 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/leds/red      delay_on     0640    system    system
 /sys/class/leds/red      delay_off    0640    system    system
 /sys/class/leds/red      breath       0640    system    system
+/sys/class/leds/red      trigger      0640    system    system
 /sys/class/leds/green    delay_on     0640    system    system
 /sys/class/leds/green    delay_off    0640    system    system
 /sys/class/leds/green    breath       0640    system    system
+/sys/class/leds/green    trigger      0640    system    system
 /sys/class/leds/blue     delay_on     0640    system    system
 /sys/class/leds/blue     delay_off    0640    system    system
 /sys/class/leds/blue     breath       0640    system    system
+/sys/class/leds/blue     trigger      0640    system    system
 
 # NPU device
 /dev/msm_npu             0644   system     system
@@ -360,6 +385,8 @@ firmware_directories /vendor/firmware_mnt/image/
 
 #Memory Offline
 /sys/devices/system/memory/memory* state    0660 system system
+
+/sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
 # sys-fs display
 /sys/class/graphics/fb*     hpd                      0664    system  graphics
