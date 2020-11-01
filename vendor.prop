@@ -48,6 +48,7 @@ persist.camera.video.CDS=false
 persist.vendor.qti.telephony.vt_cam_interface=1
 
 # Charger
+ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
 
 # Display
