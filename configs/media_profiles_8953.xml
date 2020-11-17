@@ -185,7 +185,7 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
-
+<!--
     <EncoderProfile quality="qhd" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="42000000"
@@ -224,7 +224,7 @@
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
-
+-->
     <EncoderProfile quality="qcif" fileFormat="3gp" duration="30">
       <Video codec="h264"
              bitRate="192000"
