@@ -4,3 +4,5 @@ binder_call(system_app, hal_audio_default)
 binder_call(system_app, hal_health_default)
 binder_call(system_app, hal_lineage_health_default)
 binder_call(system_app, hal_wifi_supplicant_default)
+
+allow system_app fm_radio_device:chr_file r_file_perms;
