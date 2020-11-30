@@ -85,10 +85,6 @@ persist.vendor.data.mode=concurrent
 #system props for time-services
 persist.timed.enable=true
 
-#system prop for Bluetooth SOC type
-vendor.qcom.bluetooth.soc=pronto
-persist.vendor.btstack.enable.splita2dp=false
-
 # System property for cabl
 ro.qualcomm.cabl=2
 ro.vendor.display.cabl=2
@@ -97,11 +93,6 @@ ro.vendor.display.cabl=2
 # System props for telephony
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
-
-#
-# System props for bluetooh
-# System prop to turn on hfp client
-bluetooth.hfp.client=1
 
 #Simulate sdcard on /data/media
 #
