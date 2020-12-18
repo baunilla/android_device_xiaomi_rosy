@@ -68,8 +68,8 @@ vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb|0507
 vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp|90182e8da8b719099bfc1db6b6d70623307f55ff
 
 # Bluetooth - from daisy_sprout:10/QKQ1.191002.002/V11.0.14.0.QDLMIXM
--lib/libbtconfigstore.so|cf6430d2616c9c1bbb98080c61ede28160fe1e9c
--lib64/libbtconfigstore.so|a65efb84466346cfcb92cef590f0bfb4bd03adf5
+-lib/libbtconfigstore.so|03783899811bfff1a77f8966899857f9fa3fded9
+-lib64/libbtconfigstore.so|15c5eca4251344992149f5a7411d5fc9b1ff4461
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|378ad8ce95651b4bf81ad73aaffbdf0666c55432
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|a244ce3acd958c31865e048e0ead9bc54d1c0465
@@ -1885,7 +1885,7 @@ lib/libwfdconfigutils.so|a22f6334af429bac7410e9052708cbbfb37017fe
 lib/libwfdmminterface.so|feb2b5323b5ce8da54b69e0fcec17e02197210fc
 lib/libwfdmmsink.so|b9fc0b2d454d39c9e10b22aad34af30d33337eee
 lib/libwfdmmsrc.so|cd7bf20683715262be75ba4c26a547f2d7329cdf
-lib/libwfdnative.so|675f28a48c137856be57cbd11ef80adf7c348a92
+lib/libwfdnative.so|722355d39c6e97ed4c16ed6367f4ac4a294288e9
 lib/libwfdrtsp.so|48045ceab0d26790cae12cf4911c2a7406623800
 lib/libwfdservice.so|8ddad35794289805d6c855c237c9cc90161c8f66
 lib/libwfdsm.so|e15c5495b28fa5be0ed87f684bf39664ff3082e1
@@ -1895,7 +1895,7 @@ lib/libwfduibcsink.so|b8ef4abf2c67cf5e9f187b71cda4195171bb15ed
 lib/libwfduibcsrcinterface.so|4eba1e3a541bc433eb75cf74807591fd16618c74
 lib/libwfduibcsrc.so|58d43f5593a7c0a6929c0ed3aef02386fbc0afc8
 lib64/libwfdclient.so|ef47176ace77a2e90a7c45515280b36591168ecc
-lib64/libwfdnative.so|279271166b8840084b93f34cebaf4242b00090d3
+lib64/libwfdnative.so|0c7ad115f8ad8acb0f7609268e37b9df4ddc7922
 -priv-app/WfdService/WfdService.apk|311d2726d96beba2baa28b6c73dcb6f8a3d99d40
 vendor/bin/wifidisplayhalservice|53f17ca800499f18514c4a68bff571491404ead6
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|04e463342cbba4c0e9c311a18238f95dec9359fd
