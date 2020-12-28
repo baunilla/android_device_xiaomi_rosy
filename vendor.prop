@@ -88,6 +88,9 @@ ro.telephony.call_ring.multiple=false
 ro.telephony.iwlan_operation_mode=legacy
 service.qti.ims.enabled=1
 
+# Recovery
+persist.vendor.recovery_update=false
+
 # SurfaceFlinger
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
