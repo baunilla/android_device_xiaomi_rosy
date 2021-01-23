@@ -30,8 +30,7 @@
 #define BLINK           "blink"
 #define BRIGHTNESS      "brightness"
 
-#define MAX_LED_BRIGHTNESS    255
-#define MAX_LCD_BRIGHTNESS    4095
+#define LCD_BRIGHTNESS_SCALE    (4095 / 0xFF)
 
 namespace {
 /*
@@ -75,17 +74,8 @@ static uint32_t getBrightness(const LightState& state) {
     return (77 * red + 150 * green + 29 * blue) >> 8;
 }
 
-static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightness) {
-    return brightness * maxBrightness / 0xFF;
-}
-
-static inline uint32_t getScaledBrightness(const LightState& state, uint32_t maxBrightness) {
-    return scaleBrightness(getBrightness(state), maxBrightness);
-}
-
 static void handleBacklight(Type /* type */, const LightState& state) {
-    uint32_t brightness = getScaledBrightness(state, MAX_LCD_BRIGHTNESS);
-    set(LCD_LED BRIGHTNESS, brightness);
+    set(LCD_LED BRIGHTNESS, getBrightness(state) * LCD_BRIGHTNESS_SCALE);
 }
 
 static void setNotification(const LightState& state) {
@@ -98,7 +88,7 @@ static void setNotification(const LightState& state) {
         /* Enable blinking */
         set(WHITE_LED BLINK, 1);
     } else {
-        set(WHITE_LED BRIGHTNESS, getScaledBrightness(state, MAX_LED_BRIGHTNESS));
+        set(WHITE_LED BRIGHTNESS, getBrightness(state));
     }
 }
 
