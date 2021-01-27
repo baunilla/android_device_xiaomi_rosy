@@ -28,8 +28,11 @@ allow hal_fingerprint_default gx_fpd_data_file:file create_file_perms;
 
 allow hal_fingerprint_default proc:file { open read write };
 
-dontaudit hal_fingerprint_default media_rw_data_file:dir { search read };
-dontaudit hal_fingerprint_default mnt_user_file:lnk_file { read };
+allow hal_fingerprint_default media_rw_data_file:dir { open search read };
+allow hal_fingerprint_default mnt_user_file:lnk_file read;
+allow hal_fingerprint_default mnt_user_file:dir search;
+allow hal_fingerprint_default storage_file:lnk_file read;
+allow hal_fingerprint_default storage_file:dir search;
+
 dontaudit hal_fingerprint_default rootfs:dir { search read };
 dontaudit hal_fingerprint_default sdcardfs:dir { search read };
-dontaudit hal_fingerprint_default storage_file:lnk_file { read };
