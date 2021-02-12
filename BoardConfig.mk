@@ -198,6 +198,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system_ext/lib64/lib-imsvideocodec.so|libshims_imsvt.so \
+    /vendor/lib/libmmcamera2_stats_modules.so|libshims_camera.so \
     /vendor/lib64/libgoodixfingerprintd_binder.so|libshims_goodix.so
 
 # Treble

@@ -15,6 +15,22 @@
 //
 
 cc_library_shared {
+    name: "libshims_camera",
+    srcs: ["CameraStats.cpp"],
+    defaults: ["hidl_defaults"],
+    compile_multilib: "32",
+    vendor: true,
+    cflags: [
+        "-Werror",
+        "-Wextra",
+        "-Wall",
+    ],
+    shared_libs: [
+        "libutils",
+    ],
+}
+
+cc_library_shared {
     name: "libshims_goodix",
     srcs: ["PermissionCache.cpp"],
     compile_multilib: "64",
