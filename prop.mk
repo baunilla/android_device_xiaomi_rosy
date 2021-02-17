@@ -134,6 +134,10 @@ ro.telephony.iwlan_operation_mode=legacy \
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 service.qti.ims.enabled=1
 
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.sensors.smd=false
+
 # SoC
 PRODUCT_VENDOR_PROPERTIES += \
 ro.soc.manufacturer=Qualcomm \
