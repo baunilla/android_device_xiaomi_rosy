@@ -37,8 +37,8 @@
     <bool translatable="false" name="config_wifi_turn_off_during_emergency_call">true</bool>
 
     <!-- Indicates that connected MAC randomization is supported on this device -->
-    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
     
     <!-- Indicates that AP mode MAC randomization is supported on this device -->
-    <bool name="config_wifi_ap_mac_randomization_supported">false</bool>  
+    <bool translatable="false" name="config_wifi_ap_mac_randomization_supported">false</bool>  
 </resources>
