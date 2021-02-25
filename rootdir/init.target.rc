@@ -33,7 +33,7 @@ on early-init
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    mount_all /vendor/etc/fstab.qcom
+    mount_all /vendor/etc/fstab.qcom --early
     restorecon_recursive /mnt/vendor/persist
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
@@ -66,6 +66,9 @@ on post-fs-data
     mkdir /persist/data/tz 0700 system system
     mkdir /persist/qti_fp 0700 system system
     mkdir /data/misc/audio_pp 0771 media audio
+
+on late-fs
+    mount_all /vendor/etc/fstab.qcom --late
 
 #start camera server as daemon
 service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
