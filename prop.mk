@@ -91,6 +91,10 @@ drm.service.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.iorapd.enable=false
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.stagefright.omx_default_rank.sw-audio=1 \
