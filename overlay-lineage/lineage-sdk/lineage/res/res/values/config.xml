@@ -19,6 +19,7 @@
 
     <!-- Default values for LiveDisplay -->
     <integer name="config_defaultLiveDisplayMode">0</integer>
+    <bool name="config_enableLiveDisplay">false</bool>
 
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
