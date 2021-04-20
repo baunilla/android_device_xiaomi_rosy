@@ -61,20 +61,15 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|3b33f3117e91832b663d28410a47a2c2b
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|73d7132773572d87bdac6b5e454573e79d35316c
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|1e238b1e84d889f424001f5134f0d2994d13251a
-vendor/lib64/libbtnv.so|82cc941c6a262e0965925b4955b1ea508b798bfa
-vendor/lib64/libbt-hidlclient.so|58caa4b8fac26ae5011c6439a1aff71f0a14a9a3
-vendor/lib64/libsoc_helper.so|affbc1cc49d3df3a6e174a21bf3fe79c7130d1c0
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|a7c3fdcdfdf2d982b04baa89e0e4dc5f5d505bf7
-
-# Bluetooth - Audio - from FP3:11/8901.4.A.0013.4
-vendor/lib64/hw/audio.bluetooth_qti.default.so|207b6650f26647c8e2d298a3e9260abb38eb127a
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|15cb4a03856ddea15e60be15c7a1d5c499ebc463
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|68848631511ed0117adc540725d0e2fa57843bd9
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|c3d2c441923730415eec24d7ad53c00a136acf8a
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|05e2d1fd44260cf603eb40a9f795d9ff4c43226f
-vendor/lib64/libbluetooth_audio_session_qti.so|7478f6d9bb38509bf1835665210b9d498ae6e482
+vendor/lib64/libbtnv.so|82cc941c6a262e0965925b4955b1ea508b798bfa
+vendor/lib64/libbt-hidlclient.so|58caa4b8fac26ae5011c6439a1aff71f0a14a9a3
+vendor/lib64/libsoc_helper.so|affbc1cc49d3df3a6e174a21bf3fe79c7130d1c0
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|25b2ce43c28c274b15c3b683831c214e3efb531d
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|117b74f1df4ee67297f431ae47d622bbb8f587ca
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|a7c3fdcdfdf2d982b04baa89e0e4dc5f5d505bf7
 
 # Bluetooth (ANT+) - from FP3:11/8901.4.A.0016.6
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|2bad2579ce576c46af6a50ee6687bd92fa7f76cd
