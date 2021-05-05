@@ -49,6 +49,12 @@ vendor.display.disable_skip_validate=1
 #
 persist.vendor.cne.feature=1
 
+#
+# system props for the dpm module
+#
+persist.vendor.dpm.feature=1
+persist.vendor.dpm.loglevel=0
+
 #system props for the MM modules
 media.msm8956hw=0
 mm.enable.smoothstreaming=true
