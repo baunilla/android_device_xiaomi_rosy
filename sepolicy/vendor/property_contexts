@@ -12,5 +12,7 @@ sys.post_boot.parsed       u:object_r:vendor_mpctl_prop:s0
 # Netmgrd
 persist.net.doxlat         u:object_r:vendor_xlat_prop:s0
 
+persist.vendor.data.qmipriod_load                u:object_r:vendor_radio_prop:s0
+
 # Tee
 sys.listeners.registered   u:object_r:vendor_tee_listener_prop:s0

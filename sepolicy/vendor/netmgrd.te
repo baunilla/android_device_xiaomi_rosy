@@ -1,2 +1,3 @@
 #============= netmgrd ==============
 set_prop(netmgrd, vendor_xlat_prop)
+set_prop(netmgrd, vendor_radio_prop)
