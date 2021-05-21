@@ -27,4 +27,7 @@
     <!-- Default state of tap to wake -->
     <bool name="def_double_tap_to_wake">false</bool>
 
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple">Redmi 5</string>
+
 </resources>
