@@ -38,13 +38,9 @@ on charger
     mkdir /config/usb_gadget/g1/configs/b.1/strings/0x409 0770
     write /config/usb_gadget/g1/configs/b.1/MaxPower 900
     symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
-    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.usb.sh
     write /config/usb_gadget/g1/strings/0x409/product ${ro.product.model}
     setprop sys.usb.config mass_storage
     setprop sys.usb.configfs 1
-
-on init
-    exec u:r:vendor-qti-testscripts:s0 -- /vendor/bin/sh /vendor/bin/init.qti.usb.debug.sh
 
 on boot
     mount configfs none /config
@@ -109,7 +105,6 @@ on boot
     mkdir /dev/ffs-diag-2 0770 shell system
     mount functionfs diag_mdm2 /dev/ffs-diag-2 uid=2000,gid=1000,rmode=0770,fmode=0660,no_disconnect=1
     setprop sys.usb.mtp.device_type 3
-    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.usb.sh
     write /config/usb_gadget/g1/strings/0x409/product ${ro.product.model}
     write /config/usb_gadget/g2/strings/0x409/product ${ro.product.model}
     setprop sys.usb.config ${persist.vendor.usb.config}
