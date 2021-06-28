@@ -1302,6 +1302,15 @@ vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 # Listen - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
 vendor/lib/hw/sound_trigger.primary.msm8953.so|991e0be9c5743d5d3394eb2f4b82740c3c0616f7
 vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
+vendor/lib/libgcs-calwrapper.so|96178681d6704bb457f006f9fa8b6bcc71513c8a
+vendor/lib/libgcs-ipc.so|05f718e7bf68b31ca1199f8812046234c00d9a3e
+vendor/lib/libgcs-osal.so|2daf1f34a595d218af88c79285743bafa2145e20
+vendor/lib/libgcs.so|8aac6d5adc83d1cf4b7346304b350b2a18920c44
+vendor/lib/libcapiv2svacnn.so|e505e04cb4281bc6e5f2606d4ddf7c46ae151516
+vendor/lib/libcapiv2vop.so|1be48a1445375458880a28272a0538ba8364d523
+vendor/lib/liblistenjni.so|1a7273acbd33b6e5d3c7dd0957da2fdc903acc85
+vendor/lib/liblistensoundmodel2.so|d645cf28571a6cbe867b15dd1665822c713ec35e
+vendor/lib/libmulawdec.so|93478ef9b16a6e92da80776392a036a41adfaf92
 vendor/lib/libsmwrapper.so|efed6475b26cafc15fed591a9aaa68b38cf6a37b
 vendor/lib/vendor.qti.voiceprint@1.0.so|b70091c7b738394468b7d732df283d23a3975f46
 vendor/lib64/hw/sound_trigger.primary.msm8953.so|4ff47ab34dfd457a57a5bede70769fbbc63c240e
