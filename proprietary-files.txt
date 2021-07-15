@@ -1324,11 +1324,11 @@ vendor/lib/libqti-perfd.so|855dd68c8a277c8b4787579a935a23bead62dd59
 vendor/lib/libqti-perfd-client.so|ca0e9b4e029985949b8c0fcc9e9a7d543a7a789e
 vendor/lib/libqti-util.so|f1a4d655ee827d791447f303e59197e7271fafb5
 
-# Peripheral manager - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
-vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
-vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
-vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
-vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
+# Peripheral manager - from LA.UM.9.6.2.r1-02800-89xx.0
+vendor/bin/pm-proxy|4d9a24cf5d90f2f320fb838a190fcef9e070ef57
+vendor/bin/pm-service|212168358c65533c434e54be7b6fed0fd02a099c
+vendor/lib/libperipheral_client.so|76dc87152bd06e0291fbde2f6bf3b8b14325b604
+vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
 
 # Power-off alarm - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|46387fe02067df3c4c09ec49fff7737473ea1145
