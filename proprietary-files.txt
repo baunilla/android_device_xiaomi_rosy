@@ -1535,20 +1535,20 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|ae519b1c906e60b66e885922e620f456548
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|1109c9460a1d852326bf946c47b2fa86f1dc1bce
 
-# Sensors - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
-vendor/bin/sensors.qti|a0701f889c2af8dd964a8f0300761e91a3748815
-vendor/lib/hw/activity_recognition.msm8953.so|1c7334f56182513bddefcb3b655064cca1121e21
-vendor/lib/libsensor1.so|a3bff5966ef0dd0623d385da9a8809f6dabb11f3
-vendor/lib/libsensor_reg.so|8f113416861ab8c14613ebf3ea6eeb9997971624
-vendor/lib/libsensor_user_cal.so|e76bc983cce7711bbb62a0f6062078fe7fb954eb
-vendor/lib/sensor_calibrate.so|63edd83044713c8b5545655daf4e0eb7cdbebe1d
-vendor/lib/sensors.ssc.so|302e5aee38e1296dfba32b681681492d5070f509
-vendor/lib64/hw/activity_recognition.msm8953.so|51a67f37dc2f7c9654fa3efe6a193e8dd93846c2
-vendor/lib64/libsensor1.so|24a1ee61b8d8d9494c7ce637bfdc280b428da5c8
-vendor/lib64/libsensor_reg.so|54baa94535e7dd96804019810e90cfbec5519bf5
-vendor/lib64/libsensor_user_cal.so|aea178debd6562e4f9e352aede494429c68ffcec
-vendor/lib64/sensor_calibrate.so|4bb147013fc7bb41b1009b591a4d91abbc54fb30
-vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
+# Sensors - from LA.UM.9.6.2.r1-02800-89xx.0
+vendor/bin/sensors.qti|72121683d170d99bcb4a92a255b557ba93e865f4
+vendor/lib/hw/activity_recognition.msm8953.so|b8e9528fb29ea3457151e78a40a37920e47bb0df
+vendor/lib/libsensor1.so|ef8cf83826a2f9b66b89928feee75c51e29b8735
+vendor/lib/libsensor_reg.so|733a12b41dc0751b54c01a9ad980f0d039e45ab2
+vendor/lib/libsensor_user_cal.so|93f881be5b50f3ef12c07d82f5b29885b10dd80f
+vendor/lib/sensor_calibrate.so|d621d8951f66b82cc2f22e1e4673c74180480c2a
+vendor/lib/sensors.ssc.so|f8483b2fcc2c11e838631be3322f990be60541cf
+vendor/lib64/hw/activity_recognition.msm8953.so|99a419a6afa3e5b95c050559841304f4fd427de4
+vendor/lib64/libsensor1.so|83bf6729b5729f843a1be72b158e54083fdc1a30
+vendor/lib64/libsensor_reg.so|b8cf5b75c30be2a591d69c84fe5639958b1f6569
+vendor/lib64/libsensor_user_cal.so|9493f9495f170ab043b0ea9fec8d0bba0cd7b9d9
+vendor/lib64/sensor_calibrate.so|219ee0b1bdcc6a3f0b9261f6fc31838916856c99
+vendor/lib64/sensors.ssc.so|863de4d737c389c059670d8e1592bba58ae33de3
 
 # Thermal - FP3-user-10-8901.3.A.0033.20200815-08150109-release-keys
 vendor/bin/thermal-engine|b031c9df02d5ed57f9155f441a1883b46cdab57b
