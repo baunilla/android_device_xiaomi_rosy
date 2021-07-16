@@ -998,8 +998,8 @@ vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 
-# Charger - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
-vendor/bin/hvdcp_opti|bd0808db92452c5fd7ec272a35924f23fb4ffa01
+# Charger - from LA.UM.9.6.2.r1-02800-89xx.0
+vendor/bin/hvdcp_opti|b249fb84448a61daff60bf77ac4045f23f37fb8e
 
 # CNE - from LA.UM.9.6.2.r1-02800-89xx.0
 -vendor/app/CneApp/CneApp.apk|d27c7fe7d57b2ad01dcf233dccedbaa9af702422
