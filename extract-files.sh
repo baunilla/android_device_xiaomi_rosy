@@ -64,11 +64,6 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 
 DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
-# Use libcutils-v29.so for libdpmframework.so
-
-BLOB_DPM_FRAMEWORK="$DEVICE_BLOB_ROOT"/product/lib64/libdpmframework.so
-        sed -i "s/libhidltransport.so/libcutils-v29.so\x00\x00\x00/" "$BLOB_DPM_FRAMEWORK"
-        
 # Always set 0 (Off) as CDS mode in iface_util_set_cds_mode
 
 BLOB_IFACE_MODULES="$DEVICE_BLOB_ROOT"/vendor/lib/libmmcamera2_iface_modules.so
