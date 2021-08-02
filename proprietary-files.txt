@@ -1578,8 +1578,8 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|b17f0775824bd358
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|933eb7026797f3dadad3d10fd69443b11f6563f3
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|16baab27397ad493e845515c20ac0c0c063c775d
 
-# WiFi - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
-vendor/bin/wcnss_service|1a7da5ec11248ea69af665d711a846e4cc7c95be
+# WiFi - from LA.UM.9.6.2.r1-02800-89xx.0
+vendor/bin/wcnss_service|9bc92b389a66d2b35aae42a0d5e4d8192ed0bd0c
 
 # WiFi Display - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
