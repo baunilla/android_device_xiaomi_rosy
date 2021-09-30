@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/rosy
 
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := rosy
 
