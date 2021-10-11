@@ -1505,6 +1505,7 @@ system_ext/lib64/lib-imsvtextutils.so|69a9466876cea5148dcde702c00c75bea0c98520
 system_ext/lib64/lib-imsvtutils.so|d1bc74527ac502a0b31bfaed47c97ce36d41cd78
 system_ext/lib64/libimscamera_jni.so|217354bfe6d1e1736572218b1a34468937544350
 system_ext/lib64/libimsmedia_jni.so|c804adc4d7224303a53f6270e6c1cf9319008a05
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|7157c5a2852683df0a50a588a09b7e5a0c5688da
 -system_ext/priv-app/ims/ims.apk|fcc65426a824fcf4a79d22dc6989d830610596bd
 vendor/bin/ims_rtp_daemon|bef5289f5c4a77cd9ae1b3d6100f76b99ffa7614
 vendor/bin/imsdatadaemon|b9b475c85ded8da6e24fd212453512f1d90b530e
