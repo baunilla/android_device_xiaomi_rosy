@@ -17,6 +17,9 @@
 # Inherit proprietary vendor files
 $(call inherit-product, vendor/xiaomi/rosy/rosy-vendor.mk)
 
+TARGET_BOARD_PLATFORM := msm8953
+TARGET_BOARD_SUFFIX := _64
+
 # APEX
 PRODUCT_COMPRESSED_APEX := false
 
