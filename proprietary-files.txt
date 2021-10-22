@@ -1409,7 +1409,6 @@ vendor/lib64/libqmiservices.so|5b62adefda77de5e3e4b7b1d2db8a87ebdc54b23
 vendor/lib64/libqsocket.so|391748e46f7dbbf267dbc5a5c89f0d2a8b4fca4e
 
 # Radio - from LA.UM.9.6.2.r1-02800-89xx.0
--system_ext/app/datastatusnotification/datastatusnotification.apk|e53edd2449a9d567af2675ee1b204137c1784e69
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|a32f88ddcc8f9cba18aa5697ee5bd52201e89b13
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
