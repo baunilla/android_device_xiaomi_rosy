@@ -392,6 +392,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     librmnetctl.vendor \
     libcnefeatureconfig \
+    libshims_imsvt \
     libxml2 \
     telephony-ext \
     qti-telephony-utils \
