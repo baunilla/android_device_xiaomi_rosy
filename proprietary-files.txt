@@ -1562,10 +1562,11 @@ vendor/lib64/libsensor_user_cal.so|9493f9495f170ab043b0ea9fec8d0bba0cd7b9d9
 vendor/lib64/sensor_calibrate.so|219ee0b1bdcc6a3f0b9261f6fc31838916856c99
 vendor/lib64/sensors.ssc.so|863de4d737c389c059670d8e1592bba58ae33de3
 
-# Thermal - FP3-user-10-8901.3.A.0033.20200815-08150109-release-keys
-vendor/bin/thermal-engine|b031c9df02d5ed57f9155f441a1883b46cdab57b
--vendor/lib/libthermalclient.so|c0089a7fdd34bc5f3ea0556e5f4a087ab02fc34f
--vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
+# Thermal - from LA.UM.9.6.2.r1-02800-89xx.0
+vendor/bin/thermal-engine|bacf88c801ba037e1e1d2671937404184eb8964b
+vendor/etc/init/init_thermal-engine.rc|f0d14aa4734b2e8afd61a4eed73238187b268f48
+-vendor/lib/libthermalclient.so|61becb3664bb8b445cec53c2f173af82ed1ad7ae
+-vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time services - from LA.UM.9.6.2.r1-02800-89xx.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
