@@ -31,7 +31,7 @@
 /dev/spidev7\.1				u:object_r:spidev_file:s0
 
 # Light HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_rosy u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.xiaomi u:object_r:hal_light_default_exec:s0
 
 # LiveDisplay HAL
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.xiaomi_rosy u:object_r:hal_lineage_livedisplay_qti_exec:s0

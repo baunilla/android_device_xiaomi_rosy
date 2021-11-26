@@ -23,10 +23,16 @@ namespace android {
 namespace hardware {
 namespace light {
 
-// Default implementation that reports no supported lights.
 class Lights : public BnLights {
+
+public:
     ndk::ScopedAStatus setLightState(int id, const HwLightState& state) override;
     ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
+
+private:
+    void write(const std::string &path, uint32_t value);
+    uint32_t RgbaToBrightness(uint32_t color);
+    void setNotificationLight(const HwLightState& state);
 };
 
 }  // namespace light
