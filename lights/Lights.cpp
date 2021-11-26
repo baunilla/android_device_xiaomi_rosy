@@ -16,20 +16,81 @@
 
 #include "Lights.h"
 
-#include <android-base/logging.h>
+#include <fstream>
 
 namespace aidl {
 namespace android {
 namespace hardware {
 namespace light {
 
-ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
-    LOG(INFO) << "Lights setting state for id=" << id << " to color " << std::hex << state.color;
-    return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+#define LEDS            "/sys/class/leds/"
+#define LCD_LED         LEDS "lcd-backlight/"
+#define WHITE_LED       LEDS "red/"
+#define BLINK           "blink"
+#define BRIGHTNESS      "brightness"
+
+#define LCD_BRIGHTNESS_SCALE    (4095 / 0xFF)
+
+#define AutoHwLight(light) {.id = (int)light, .type = light, .ordinal = 0}
+
+const static std::vector<HwLight> kAvailableLights = {
+    AutoHwLight(LightType::BACKLIGHT),
+    AutoHwLight(LightType::BATTERY),
+    AutoHwLight(LightType::NOTIFICATIONS),
+    AutoHwLight(LightType::ATTENTION)
+};
+
+void Lights::write(const std::string &path, uint32_t value) {
+    std::ofstream file(path);
+
+    if (file.is_open()) {
+        file << std::to_string(value);
+    }
 }
 
-ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* /*lights*/) {
-    LOG(INFO) << "Lights reporting supported lights";
+uint32_t Lights::RgbaToBrightness(uint32_t color) {
+    uint32_t alpha = (color >> 24) & 0xFF;
+    uint32_t red = (color >> 16) & 0xFF;
+    uint32_t green = (color >> 8) & 0xFF;
+    uint32_t blue = color & 0xFF;
+
+    if (alpha != 0xFF) {
+        red = red * alpha / 0xFF;
+        green = green * alpha / 0xFF;
+        blue = blue * alpha / 0xFF;
+    }
+    return (77 * red + 150 * green + 29 * blue) >> 8;
+}
+
+void Lights::setNotificationLight(const HwLightState& state) {
+    if (state.flashMode == FlashMode::TIMED) {
+        write(WHITE_LED BLINK, (state.flashOnMs != 0 && state.flashOffMs != 0));
+    } else {
+        write(WHITE_LED BRIGHTNESS, RgbaToBrightness(state.color));
+    }
+}
+
+ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
+    switch (id) {
+        case (int)LightType::BACKLIGHT:
+            write(LCD_LED BRIGHTNESS, RgbaToBrightness(state.color) * LCD_BRIGHTNESS_SCALE);
+            break;
+        case (int)LightType::BATTERY:
+        case (int)LightType::NOTIFICATIONS:
+        case (int)LightType::ATTENTION:
+            setNotificationLight(state);
+            break;
+        default:
+            return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+            break;
+    }
+    return ndk::ScopedAStatus::ok();
+}
+
+ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
+    for (auto i = kAvailableLights.begin(); i != kAvailableLights.end(); i++) {
+        lights->push_back(*i);
+    }
     return ndk::ScopedAStatus::ok();
 }
 
