@@ -1,2 +1,0 @@
-#============= domain ==============
-get_prop(domain, vendor_persist_camera_prop);

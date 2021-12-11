@@ -1,2 +1,0 @@
-#============= untrusted_app ==============
-get_prop(untrusted_app_all, vendor_persist_camera_prop);

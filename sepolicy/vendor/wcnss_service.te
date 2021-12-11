@@ -1,2 +1,0 @@
-#============= wcnss_service ==============
-set_prop(wcnss_service, wifi_prop);

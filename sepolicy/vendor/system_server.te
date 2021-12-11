@@ -1,5 +1,0 @@
-#============= system_server ==============
-# Thermal service
-allow system_server thermal_service:service_manager find;
-
-get_prop(system_server, vendor_persist_camera_prop)

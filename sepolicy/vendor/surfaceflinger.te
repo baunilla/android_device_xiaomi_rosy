@@ -1,2 +1,0 @@
-#============= surfaceflinger ==============
-allow surfaceflinger hal_graphics_composer_default:dir search;
