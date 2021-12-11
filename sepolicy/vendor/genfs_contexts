@@ -4,3 +4,6 @@ genfscon proc  /sys/kernel/boot_reason   u:object_r:proc_boot_reason:s0
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
+
+# Vibrator
+genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8940@3:qcom,haptics@c000/leds/vibrator   u:object_r:sysfs_leds:s0
