@@ -1,0 +1,3 @@
+#============= property ==============
+# Fingerprint
+vendor_restricted_prop(vendor_fingerprint_prop)
