@@ -1,4 +1,7 @@
 #============= ueventd ==============
+allow ueventd debugfs:dir { getattr open read relabelfrom };
+allow ueventd { debugfs debugfs_wakeup_sources }:file getattr;
+allow ueventd qti_debugfs:dir relabelto;
 allow ueventd self:capability sys_nice;
 allow ueventd fpc_sysfs:file { open read write };
 allow ueventd spidev_file:chr_file { create getattr setattr };
