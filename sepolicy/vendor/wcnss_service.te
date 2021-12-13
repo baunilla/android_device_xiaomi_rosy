@@ -1,0 +1,2 @@
+#============= wcnss_service ==============
+allow wcnss_service init:unix_stream_socket connectto;
