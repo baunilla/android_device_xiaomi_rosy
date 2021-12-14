@@ -17,6 +17,9 @@
 # Inherit proprietary vendor files
 $(call inherit-product, vendor/xiaomi/rosy/rosy-vendor.mk)
 
+# APEX
+PRODUCT_COMPRESSED_APEX := false
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
