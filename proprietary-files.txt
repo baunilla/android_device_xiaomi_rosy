@@ -1526,12 +1526,10 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|fa120eaa7807ff43f3974a
 
 # Sensors - from FP3:11/8901.4.A.0010
 vendor/bin/sensors.qti|8b888059a03fdc6a21d456dc8bf60264584e5507
-vendor/lib/hw/activity_recognition.msm8953.so|99ba43ace06eae105068bc2131cb1dc448160577
 vendor/lib/libsensor1.so|0c687697c9ecb0bcc054fe40e9d2b5b8b525718f
 vendor/lib/libsensor_reg.so|466b65a5986a471b47a281dd7d1867b0510ee3c0
 vendor/lib/sensor_calibrate.so|8ecc78579b7d6f62cc42fc285ba324c96a93a1fc
 vendor/lib/sensors.ssc.so|661ca9baed115c6e7934f2d37a0319aecd1b949a
-vendor/lib64/hw/activity_recognition.msm8953.so|6dedb46de4d3bbafc02430bac942b1ec78f915df
 vendor/lib64/libsensor1.so|a0ce3d160c9a6ec0b0c42cabfb736e74cf3c4b73
 vendor/lib64/libsensor_reg.so|07d7574981477c733d3c509751aac7c2abe93762
 vendor/lib64/sensor_calibrate.so|572b90e2f5362144c62cdb503bcd9834eca48b10
