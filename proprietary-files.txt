@@ -1006,6 +1006,8 @@ vendor/bin/hvdcp_opti|b249fb84448a61daff60bf77ac4045f23f37fb8e
 -vendor/app/CneApp/CneApp.apk|d27c7fe7d57b2ad01dcf233dccedbaa9af702422
 -vendor/app/IWlanService/IWlanService.apk|995d4bfeaa1f5ff989a269dbca2a2ffe345a0ded
 vendor/bin/cnd|5eeaf86cea1275fd058dd91b99ea3d6109fb1881
+vendor/etc/cne/profileSlm.xml|947917691684584b7e2ddf3588cd6f8e99f3804f
+vendor/etc/cne/slm.conf|089de5d9382331791088edd9b4bce13bfa5ea336
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml|f88e13f1dd7b82388c90358f71813026370c9ed8
