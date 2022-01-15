@@ -132,8 +132,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     camera.msm8953 \
     libmm-qcamera \
-    Snap \
-    libshims_camera
+    Snap
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -177,13 +176,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    gdxbacktrace \
-    gdxunwind \
-    libshims_goodix \
-    libstdc++.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -366,7 +358,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# RIL
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl:64 \
+    android.hardware.sensors@1.0-service \
+    libsensorndkbridge
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Telephony
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio@1.5.vendor \
@@ -390,21 +396,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service \
-    libsensorndkbridge
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
-
 # Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.0-service \
+    thermal.msm8953
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
@@ -415,14 +412,6 @@ PRODUCT_PACKAGES += \
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
-
-# Thermal
-PRODUCT_PACKAGES += \
-    thermal.msm8953
-
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
