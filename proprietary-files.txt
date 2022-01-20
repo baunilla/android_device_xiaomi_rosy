@@ -1096,15 +1096,15 @@ vendor/lib64/libsecureui.so|1cb5b3e219c31b6fe5e7ba5b27d434e045e085ed
 vendor/lib64/libsecureui_svcsock.so|ba9f7aa7605e54110afea5d9921381f6e6d71a19
 vendor/lib64/libssd.so|5b9ac8a457118b1e1b80f87fdc0e78d916ee099a
 
-# DRM - from lmi:11/RKQ1.200826.002/20.10.19:user/release-keys
-vendor/lib64/libops.so|b2223e64db9d8f84262da7a8621013d3c63b6c98
-vendor/lib64/libspl.so|0fa8c0711f72fc8a914dce044cf8dddd79ee62e1
+# DRM - from coral:12/SQ1A.220105.002/7961164
+vendor/lib64/libops.so|3c763226ccc3b0f32e131af71a458b41bf2b3d8d
+vendor/lib64/libspl.so|f8bbe0322ce06a545f5dc79c888183ac61673b68
 
-# DRM - Widevine - from FP3:11/8901.4.A.0010
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine|57d280849768bc5d5e9e954b9ac90a5a31c54172
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|6b00f42dc85becc58f303bc4588331239c5c83aa
--vendor/etc/vintf/manifest/android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib64/libwvhidl.so|ac0b1ec273600257cbba84f43f153d8ebf4db872
+# DRM - Widevine - from coral:12/SQ1A.220105.002/7961164
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine|40007c2086cb435d36b38de089cdfa4f38941b4e
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|225dd006bfecf6c1dca6793fa1c13a455ce4eae6
+-vendor/etc/vintf/manifest/android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+vendor/lib64/libwvhidl.so|8ffc9cfc0ca2abc0e7bbde94c61961b1fef45e6f
 
 # Fingerprint - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
