@@ -95,7 +95,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libsndmonitor \
-    libvolumelistener
+    libvolumelistener \
+    sound_trigger.primary.msm8953:32
 
 # Audio configuration
 PRODUCT_COPY_FILES += \

@@ -1255,7 +1255,6 @@ vendor/lib/hw/keystore.msm8953.so|f3ba873c93584392ed7b6223c707e2e47af247f6
 vendor/lib64/hw/keystore.msm8953.so|d8ad67a680846bade1a1ebdb527c7feb4f496801
 
 # Listen - from LA.UM.9.6.2.r1-02800-89xx.0
-vendor/lib/hw/sound_trigger.primary.msm8953.so|55f8b7ebf9b30ef84341081dcdd5289dc70ceaa6
 vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
 vendor/lib/libsmwrapper.so|f0ee761c02c888e77d947bb87d162d9379bc1530
 
