@@ -18,10 +18,8 @@ vendor/lib64/libmdsprpc.so|c0b5cf2e733829cd7d8ba0c3133cb115511b5dc5
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|95b26a4a29f1443ec389be6ca80151a0aec96b36
 
 # ADSP modules - from LA.UM.9.6.2.r1-02800-89xx.0
-vendor/lib/rfsa/adsp/dirac_resource.dar|d9b3693eab8c520ef859236b8235752188b7cba0
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
-vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
 vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
@@ -47,24 +45,15 @@ vendor/lib64/libaudcal.so|77901cc2b49aae38ca5e6209bc9dda829c52cf7b
 vendor/lib64/libaudioalsa.so|534d4dc07fecea0611273c745721b1ed2015a3a3
 vendor/lib64/libqtigef.so|9108e3248c066102d7c57dd79d3e960647a8c84d
 
-# Audio ACDB - from rosy:8.1.0/OPM1.171019.026/V11.0.2.0.ODAMIXM
-vendor/etc/acdbdata/adsp_avs_config.acdb|ac0616af3b2d4f070c0e54c18126a877e528621b
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|69d97d52c5ff2a47ef13aeded96af7c5c78e3b13
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|6f6fe990add3c3d5e096a345dad151a134c437b8
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|cd62dfc80137bee694529f3206f97d7f5c4b1978
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|dee549610c24d9e35012dc883278ab7a58ce99bb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|a44c60fe0d65c73366e35c5c19d0195c77c458f0
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|42c1c655c3b0038208a626132dfb063ae57fef03
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|ac0f6d164cec18c2fef3992a6c22aca2bcf16f08
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|921ca227bc413a69c1ff0075f0a20c7f0ec86566
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb|38c6e7d42ae194d238198e33fdb1c3f525e5a326
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb|aa13ec31e85bae208ab5a9723dc1aa6dff041b6d
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb|c608e52607c2389eb3f52f2053c98438ebcdff10
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb|2bb7c0bfac4308d4c112d8e3fee55d8e995a8176
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb|be7fc11d6342ccd931e7901886ca01eaa207e539
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb|9129d83bc6363a2a67d6a7a216cc2fd95c64a84d
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb|0507d4aded452d3c948f588240109c77b5f91372
-vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp|90182e8da8b719099bfc1db6b6d70623307f55ff
+# Audio ACDB - from LA.UM.9.6.2.r1-02800-89xx.0
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|ba7ede78c818ee5e597b14d3f0ef60af6731aa4e
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|118f7e79d0916d26193be7dd094fd3301ef40cef
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|b9974ab5dfba31a8e27a26c64e19e923248133dc
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|3cdebf51d8ab88fd0fa7b534f9706d6981e5e1dc
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|e6bf45c31fd29bcc28fd066cb97895baaf4a7523
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|1eb1feeeaec701998654effd36e9c722709ecd5e
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|8a3970882672ae8a4c2a901303044c9c320bd13c
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|c49fabf744b88f6c3d9cc5bab3296e0f7c60fad4
 
 # Bluetooth - from LA.UM.9.6.2.r1-02800-89xx.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2401640a10df4de23f704b87c4adab2da9ed111d
