@@ -182,7 +182,7 @@ persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 
 #expose aux camera for below packages
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # Default media volume
 ro.config.media_vol_default=15
