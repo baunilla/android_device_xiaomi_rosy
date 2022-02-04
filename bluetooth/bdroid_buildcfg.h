@@ -24,7 +24,7 @@
 #define BT_CLEAN_TURN_ON_DISABLED 1
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
 
-#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+// Wide-band speech support
 #define BTM_WBS_INCLUDED TRUE
 #define BTIF_HF_WBS_PREFERRED TRUE
 
