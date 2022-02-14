@@ -42,8 +42,7 @@
 /(vendor|system/vendor)/bin/init\.goodix\.sh    u:object_r:init_fingerprint_exec:s0
 
 # Sysfs
-/sys/devices(/platform)?/soc/1b00000.qcom,msm-cam/video4linux/video[0-33]/name(/.*)?    u:object_r:sysfs_jpeg:s0
-/sys/devices(/platform)?/soc/78b6000\.i2c/i2c-2/2-[0-9a-f]+/leds(/.*)?			u:object_r:sysfs_leds:s0
+/sys/devices(/platform)?/soc/78b6000\.i2c/i2c-2/2-[0-9a-f]+/leds(/.*)?		u:object_r:sysfs_leds:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
