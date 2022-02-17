@@ -15,17 +15,6 @@
 //
 
 cc_library_shared {
-    name: "libshims_camera",
-    srcs: ["DisplayEventReceiver.cpp"],
-    shared_libs: ["libgui_vendor"],
-    include_dirs: [
-        "frameworks/native/include",
-    ],
-    compile_multilib: "32",
-    vendor: true,
-}
-
-cc_library_shared {
     name: "libshims_goodix",
     srcs: ["PermissionCache.cpp"],
     compile_multilib: "64",
