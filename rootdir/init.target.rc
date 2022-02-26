@@ -133,12 +133,6 @@ on property:init.svc.vendor.hwcomposer-2-1=running
 on property:init.svc.vendor.hwcomposer-2-1=restarting
     stop vendor.ppd
 
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
-
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
