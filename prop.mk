@@ -1,7 +1,6 @@
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-audio.offload.disable=true \
 persist.vendor.audio.fluence.speaker=false \
 persist.vendor.audio.fluence.voicecall=true \
 persist.vendor.audio.fluence.voicerec=false \
@@ -25,7 +24,6 @@ vendor.audio.tunnel.encode=false \
 vendor.audio.use.sw.alac.decoder=true \
 vendor.audio.use.sw.ape.decoder=true \
 vendor.audio_hal.period_size=192 \
-vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1 \
 vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
 vendor.voice.playback.conc.disabled=true \
@@ -80,32 +78,6 @@ vendor.qcom.bluetooth.soc=pronto \
 persist.vendor.qcom.bluetooth.enable.splita2dp=false \
 ro.vendor.bluetooth.wipower=false
 
-# Camera
-PRODUCT_PROPERTY_OVERRIDES += \
-camera.display.lmax=1280x720 \
-camera.display.umax=1920x1080 \
-camera.lowpower.record.enable=1 \
-media.camera.ts.monotonic=1 \
-persist.camera.CDS=false \
-persist.camera.HAL3.enabled=1 \
-persist.camera.dual.camera=0 \
-persist.camera.eis.enable=1 \
-persist.camera.gyro.disable=0 \
-persist.camera.isp.clock.optmz=0 \
-persist.camera.stats.af.debug=0 \
-persist.camera.stats.test=5 \
-persist.camera.video.CDS=false \
-persist.vendor.qti.telephony.vt_cam_interface=1
-
-# Charger
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.charger.disable_init_blank=true \
-ro.charger.enable_suspend=true
-
-# Data
-PRODUCT_VENDOR_PROPERTIES += \
-ro.com.android.mobiledata=false
-
 # Dalvik
 PRODUCT_VENDOR_PROPERTIES += \
 dalvik.vm.heapstartsize=16m \
@@ -140,8 +112,6 @@ ro.iorapd.enable=false
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.stagefright.omx_default_rank=0 \
-media.stagefright.audio.sink=280 \
-mm.enable.sec.smoothstreaming=true \
 vendor.audio.hw.aac.encoder=true
 
 # Radio
@@ -151,9 +121,6 @@ persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1 \
 persist.radio.multisim.config=dsds \
 persist.vendor.data.iwlan.enable=true \
-persist.vendor.ims.disableDebugDataPathLogs=1 \
-persist.vendor.ims.disableDebugLogs=1 \
-persist.vendor.ims.disableIMSLogs=1 \
 persist.vendor.radio.add_power_save=1 \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.5g_mode_pref=0 \
@@ -167,10 +134,6 @@ ro.telephony.iwlan_operation_mode=legacy \
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 service.qti.ims.enabled=1
 
-# Recovery
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.recovery_update=false
-
 # SoC
 PRODUCT_VENDOR_PROPERTIES += \
 ro.soc.manufacturer=Qualcomm \
@@ -182,10 +145,6 @@ ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
 ro.surface_flinger.max_virtual_display_dimension=4096 \
 ro.surface_flinger.protected_contents=true
-
-# Time Services
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.delta_time.enable=true
 
 # TCP
 PRODUCT_PROPERTY_OVERRIDES += \

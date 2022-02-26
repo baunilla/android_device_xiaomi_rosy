@@ -1,3 +1,39 @@
+# ADSP
+vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
+
+# Audio
+audio.offload.disable=true
+
+# Camera
+media.camera.ts.monotonic=1
+persist.camera.CDS=false
+persist.camera.HAL3.enabled=1
+persist.camera.dual.camera=0
+persist.camera.eis.enable=1
+persist.camera.gyro.disable=0
+persist.camera.isp.clock.optmz=0
+persist.camera.stats.af.debug=0
+persist.camera.stats.test=5
+persist.camera.video.CDS=false
+
+# Charger
+ro.charger.enable_suspend=true
+ro.charger.disable_init_blank=true
+
 # DPM
 persist.vendor.dpm.feature=11
 persist.vendor.dpm.loglevel=0
+
+# IMS
+persist.vendor.ims.disableDebugDataPathLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+
+# Recovery
+persist.vendor.recovery_update=false
+
+# Telephony
+ro.com.android.mobiledata=false
+
+# Time Services
+persist.vendor.delta_time.enable=true
