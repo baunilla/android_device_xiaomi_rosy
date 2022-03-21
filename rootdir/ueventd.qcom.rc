@@ -1,4 +1,5 @@
 # Copyright (c) 2012-2015, 2017-2021, The Linux Foundation. All rights reserved.
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -371,6 +372,9 @@ subsystem mem_buf_vm
 
 # Kmsg device
 /dev/kmsg                                               0620   root       system
+
+# KGSL
+/sys/class/kgsl/kgsl-3d0    perfcounter                 0660   root       shell
 
 # LED class devices
 /sys/class/leds/red      delay_on     0640    system    system
