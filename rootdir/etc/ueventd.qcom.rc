@@ -448,6 +448,9 @@ subsystem mem_buf_vm
 # devcoredump data attributes
 /sys/class/devcoredump/devcd*     data               0600    system system
 
+#power_state device node
+/dev/power_state           0660   system      system
+
 # spi infrared
 /dev/spidev7.1            0660  system system
 /dev/spidev6.1            0660  system system
