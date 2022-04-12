@@ -365,7 +365,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.sensors.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.qcom.usb.sh
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -419,6 +420,9 @@ PRODUCT_PACKAGES += \
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
+
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
 
 # Vibrator
 PRODUCT_PACKAGES += \

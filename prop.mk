@@ -151,10 +151,6 @@ ro.surface_flinger.protected_contents=true
 PRODUCT_PROPERTY_OVERRIDES += \
 net.tcp.2g_init_rwnd=10
 
-# USB
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.usb.config.extra=none
-
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
