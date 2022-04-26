@@ -353,7 +353,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
-    init.qcom.sh \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
@@ -364,6 +363,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.class_main.sh \
+    init.qcom.sh \
     init.qcom.sensors.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh
