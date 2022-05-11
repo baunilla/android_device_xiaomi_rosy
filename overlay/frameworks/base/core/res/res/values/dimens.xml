@@ -19,4 +19,5 @@
 
 <resources>
     <dimen name="rounded_corner_radius">13dp</dimen>
+    <dimen name="status_bar_height_portrait">54px</dimen>
 </resources>
