@@ -43,6 +43,8 @@ allow vendor_toolbox {
     mnt_vendor_file
     persist_alarm_file
     persist_bluetooth_file
+    persist_drm_file
+    persist_rfs_file
     persist_time_file
     persist_bms_file
     regionalization_file
