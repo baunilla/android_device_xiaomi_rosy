@@ -1,3 +1,6 @@
 #============= property ==============
 # Fingerprint
 vendor_restricted_prop(vendor_fingerprint_prop)
+
+# Wlan
+vendor_restricted_prop(vendor_wlan_prop)

@@ -1,2 +1,4 @@
 #============= wcnss_service ==============
 allow wcnss_service init:unix_stream_socket connectto;
+dontaudit wcnss_service serialno_prop:file { getattr open read };
+set_prop(wcnss_service, vendor_wlan_prop);
