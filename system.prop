@@ -34,6 +34,7 @@ debug.sf.recomputecrop=0
 debug.sf.disable_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.disable_client_composition_cache=1
+debug.sf.predict_hwc_composition_strategy=0
 
 #Disable Skip Validate
 sdm.debug.disable_skip_validate=1
