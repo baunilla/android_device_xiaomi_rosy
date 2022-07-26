@@ -12,6 +12,9 @@ persist.sys.fp.					u:object_r:vendor_fingerprint_prop:s0
 # Perf
 vendor.target.init.complete			u:object_r:vendor_mpctl_prop:s0
 
+# Mwqem
+persist.vendor.mwqem.				u:object_r:vendor_mwqem_prop:s0
+
 # Wlan
 vendor.wlan.driver.ath				u:object_r:vendor_wlan_prop:s0
 vendor.wlan.driver.config			u:object_r:vendor_wlan_prop:s0

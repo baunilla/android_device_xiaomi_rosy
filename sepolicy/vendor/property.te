@@ -2,5 +2,8 @@
 # Fingerprint
 vendor_restricted_prop(vendor_fingerprint_prop)
 
+# Mwqem
+vendor_restricted_prop(vendor_mwqem_prop)
+
 # Wlan
 vendor_restricted_prop(vendor_wlan_prop)
