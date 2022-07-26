@@ -93,10 +93,6 @@ ro.opengles.version=196610 \
 ro.hardware.vulkan=adreno \
 ro.hardware.egl=adreno
 
-# DPM
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.dpmhalservice.enable=1
-
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true

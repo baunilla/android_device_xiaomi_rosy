@@ -23,6 +23,7 @@ ro.charger.disable_init_blank=true
 # DPM
 persist.vendor.dpm.feature=11
 persist.vendor.dpm.loglevel=0
+persist.vendor.dpmhalservice.enable=1
 
 # IMS
 persist.vendor.ims.disableDebugDataPathLogs=1
