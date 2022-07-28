@@ -586,8 +586,6 @@ static struct target_therm_cfg sensor_cfg_8953[] = {
         .sensor_list = cpu_sensors_8953,
         .sens_cnt = ARRAY_SIZE(cpu_sensors_8953),
         .mult = 0.001,
-        .throt_thresh = 65,
-        .shutdwn_thresh = 125,
     },
     {
         .type = DEVICE_TEMPERATURE_GPU,
@@ -601,7 +599,6 @@ static struct target_therm_cfg sensor_cfg_8953[] = {
         .sensor_list = &misc_sensors_8953[1],
         .sens_cnt = 1,
         .mult = 0.001,
-        .shutdwn_thresh = 60,
         .label = "battery",
     },
     {
@@ -609,8 +606,6 @@ static struct target_therm_cfg sensor_cfg_8953[] = {
         .sensor_list = &misc_sensors_8953[2],
         .sens_cnt = 1,
         .mult = 0.001,
-        .throt_thresh = 45,
-        .shutdwn_thresh = 70,
         .label = "skin",
     }
 };
