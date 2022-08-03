@@ -38,6 +38,7 @@ persist.vendor.recovery_update=false
 
 # Telephony
 ro.com.android.mobiledata=false
+ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
 
 # Time Services
 persist.vendor.delta_time.enable=true
