@@ -20,7 +20,7 @@ DEVICE_PROVISIONED=1
 #
 ro.telephony.default_network=22,22
 
-debug.sf.enable_hwc_vds=1
+#debug.sf.enable_hwc_vds=0 # Android default: 0 (false)
 debug.sf.hw=0
 debug.sf.latch_unsignaled=1
 debug.egl.hw=0
