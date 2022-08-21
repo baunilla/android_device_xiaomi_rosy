@@ -1,4 +1,7 @@
 #============= property ==============
+# Camera
+vendor_restricted_prop(vendor_boardid_prop)
+
 # Fingerprint
 vendor_restricted_prop(vendor_fingerprint_prop)
 

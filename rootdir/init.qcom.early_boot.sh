@@ -29,6 +29,11 @@
 
 export PATH=/vendor/bin
 
+# Set boardid prop with arg from cmdline
+if [ -f /proc/cmdline ]; then
+    setprop ro.product.wt.boardid $(sed -e 's/.* board_id=//' /proc/cmdline|cut -f1 -s -d ":") 
+fi
+
 # Set platform variables
 if [ -f /sys/devices/soc0/hw_platform ]; then
     soc_hwplatform=`cat /sys/devices/soc0/hw_platform` 2> /dev/null

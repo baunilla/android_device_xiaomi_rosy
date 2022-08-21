@@ -11,6 +11,8 @@ persist.partial.skip				u:object_r:camera_prop:s0
 disable.cpp.power.collapse			u:object_r:camera_prop:s0
 cpp.set.clock					u:object_r:camera_prop:s0
 
+ro.product.wt.boardid				u:object_r:vendor_boardid_prop:s0
+
 # Fingerprint
 sys.fp.goodix					u:object_r:vendor_fingerprint_prop:s0
 sys.fp.vendor					u:object_r:vendor_fingerprint_prop:s0

@@ -3,3 +3,5 @@ allow qti_init_shell vendor_radio_data_file:dir search;
 allow qti_init_shell { ctl_start_prop ctl_stop_prop }:property_service set;
 allow qti_init_shell { sysfs_leds sysfs }:file { setattr write };
 allow qti_init_shell proc_boot_reason:file r_file_perms;
+allow qti_init_shell proc_cmdline:file r_file_perms;
+set_prop(qti_init_shell, vendor_boardid_prop);
