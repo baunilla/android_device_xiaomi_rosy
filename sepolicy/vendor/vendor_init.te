@@ -18,3 +18,7 @@ get_prop(vendor_init, vendor_fingerprint_prop);
 
 # Allow vendor_init to relabel unlabeled files and directories
 allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
+
+# Allow vendor_init to create data folder for goodix fp
+allow vendor_init gx_fpd_data_file:dir create_dir_perms;
+

@@ -51,7 +51,8 @@ service goodix_script /vendor/bin/init.goodix.sh
     oneshot
 
 on post-fs-data
-
+    # Goodix
+    mkdir /data/gf_data 0700 system system
     # IR nodes
     chown system system /dev/spidev7.1
     chown system system /dev/spidev6.1
