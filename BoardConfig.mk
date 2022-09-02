@@ -188,12 +188,6 @@ VENDOR_SECURITY_PATCH := 2022-06-05
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system_ext/lib64/lib-imsvideocodec.so|libshims_imsvt.so \
-    /vendor/lib/libmmcamera2_stats_modules.so|libshims_camera.so \
-    /vendor/lib64/libgoodixfingerprintd_binder.so|libshims_goodix.so
-
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true

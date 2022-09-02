@@ -15,7 +15,7 @@
 //
 
 cc_library_shared {
-    name: "libshims_camera",
+    name: "libshimcam",
     srcs: ["CameraStats.cpp"],
     defaults: ["hidl_defaults"],
     compile_multilib: "32",
