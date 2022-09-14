@@ -42,4 +42,5 @@
         <value>22.7</value>
     </array>
     <item name="battery.capacity">3300</item>
+    <item name="bluetooth.controller.voltage">3300</item>
 </device>
