@@ -36,13 +36,3 @@ cc_library_shared {
     compile_multilib: "64",
     vendor: true,
 }
-
-cc_library_shared {
-    name: "libshims_imsvt",
-    srcs: ["Surface.cpp"],
-    shared_libs: [
-        "libgui",
-        "libutils",
-    ],
-    compile_multilib: "64",
-}

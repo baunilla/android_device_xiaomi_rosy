@@ -981,7 +981,7 @@ vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql|1ca05b047116
 
 # Radio - IMS - from FP3:11/8901.4.A.0016.6
 system_ext/lib64/lib-imscamera.so|8170256dbf9120ff05f193ba937c718d9c580881
-system_ext/lib64/lib-imsvideocodec.so|3e364441c9dce63d74fbc78c4781a84080513d8a
+system_ext/lib64/lib-imsvideocodec.so|16847df7bee00fead218a2b482b49bb38fdfb6c6
 system_ext/lib64/lib-imsvt.so|4f96cc5f27551d0b6cb11ad6447d9ce8829dde47
 system_ext/lib64/lib-imsvtextutils.so|1acf1de305e455a3a924483e5652b37133d10fd1
 system_ext/lib64/lib-imsvtutils.so|dfc5cf0854fe38c191a53ec3bd2a322d05d85567
