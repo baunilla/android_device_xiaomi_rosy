@@ -137,6 +137,10 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 
 media.stagefright.audio.sink=280
 
+# Disable media transcoding
+persist.sys.fuse.transcode_user_control=true
+persist.sys.fuse.transcode_enabled=false
+
 # system prop for UBWC
 vendor.video.disable.ubwc=1
 
