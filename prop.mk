@@ -122,6 +122,7 @@ persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.5g_mode_pref=0 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.enableadvancedscan=false \
+persist.vendor.radio.ignore_dom_time=5 \
 persist.vendor.radio.mt_sms_ack=30 \
 persist.vendor.radio.procedure_bytes=SKIP \
 persist.vendor.radio.rat_on=combine \
