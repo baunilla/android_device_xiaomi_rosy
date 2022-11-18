@@ -70,6 +70,7 @@
         <device name="SND_DEVICE_OUT_BT_SCO" acdb_id="66"/>
         <device name="SND_DEVICE_OUT_BT_SCO_WB" acdb_id="578"/>
         <device name="SND_DEVICE_OUT_VOICE_TX" acdb_id="52"/>
+        <device name="SND_DEVICE_OUT_VOICE_TTY_HCO_HANDSET" acdb_id="17"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="2069"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="35"/>
@@ -86,6 +87,7 @@
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="293"/>
         <device name="SND_DEVICE_IN_VOICE_RX" acdb_id="307"/>
         <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="4"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" acdb_id="2069"/>
         <device name="SND_DEVICE_IN_CAPTURE_FM" acdb_id="0"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" acdb_id="102"/>
         <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="277"/>
