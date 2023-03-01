@@ -454,3 +454,6 @@ subsystem mem_buf_vm
 # spi infrared
 /dev/spidev7.1            0660  system system
 /dev/spidev6.1            0660  system system
+
+# Charger
+/sys/class/power_supply/battery  battery_charging_enabled  0660  system  system

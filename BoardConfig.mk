@@ -137,6 +137,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/vintf/framework_manifest.xml
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
