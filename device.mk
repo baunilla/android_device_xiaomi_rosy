@@ -198,6 +198,11 @@ PRODUCT_PACKAGES += \
     libshims_goodix \
     libstdc++.vendor
 
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
