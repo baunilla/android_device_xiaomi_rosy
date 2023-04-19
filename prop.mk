@@ -97,6 +97,10 @@ ro.hardware.egl=adreno
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
 
+# FM Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.builtin_fm_antenna_support=1
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/config
