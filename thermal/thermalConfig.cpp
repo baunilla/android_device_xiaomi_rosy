@@ -160,22 +160,22 @@ namespace implementation {
 		},
 	};
 
-	std::vector<std::string> cpu_sensors_sdm845 =
+	std::vector<std::string> cpu_sensors_sdm450 =
 	{
-		"cpu0-silver-usr",
-		"cpu1-silver-usr",
-		"cpu2-silver-usr",
-		"cpu3-silver-usr",
-		"cpu0-gold-usr",
-		"cpu1-gold-usr",
-		"cpu2-gold-usr",
-		"cpu3-gold-usr",
+		"apc1-cpu0-usr",
+		"apc1-cpu1-usr",
+		"apc1-cpu2-usr",
+		"apc1-cpu3-usr",
+		"apc0-cpu0-usr",
+		"apc0-cpu1-usr",
+		"apc0-cpu2-usr",
+		"apc0-cpu3-usr",
 	};
 
-	std::vector<struct target_therm_cfg> sensor_cfg_sdm845 = {
+	std::vector<struct target_therm_cfg> sensor_cfg_sdm450 = {
 		{
 			TemperatureType::CPU,
-			cpu_sensors_sdm845,
+			cpu_sensors_sdm450,
 			"",
 			95000,
 			115000,
@@ -208,15 +208,6 @@ namespace implementation {
 			95000,
 			40000,
 			true,
-		},
-		{
-			TemperatureType::BCL_PERCENTAGE,
-			{"soc"},
-			"soc",
-			10,
-			2,
-			10,
-			false,
 		},
 	};
 
@@ -951,8 +942,7 @@ namespace implementation {
 		{364, sensor_cfg_439},
 		{416, sensor_cfg_439},
 		{437, sensor_cfg_439},
-		{321, sensor_cfg_sdm845},
-		{341, sensor_cfg_sdm845},
+		{338, sensor_cfg_sdm450},
 		{417, sensor_cfg_bengal}, // bengal
 		{420, sensor_cfg_bengal},
 		{444, sensor_cfg_bengal},

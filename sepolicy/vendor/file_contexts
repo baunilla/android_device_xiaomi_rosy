@@ -43,4 +43,5 @@
 /sys/devices/platform/soc/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue/discard_max_bytes u:object_r:sysfs_mmc_host:s0
 
 # Thermal
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.rosy	u:object_r:hal_thermal_default_exec:s0
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
