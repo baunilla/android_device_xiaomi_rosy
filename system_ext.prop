@@ -16,10 +16,6 @@ persist.camera.stats.af.debug=0
 persist.camera.stats.test=5
 persist.camera.video.CDS=false
 
-# Charger
-ro.charger.enable_suspend=true
-ro.charger.disable_init_blank=true
-
 # DPM
 persist.vendor.dpm.feature=11
 persist.vendor.dpm.loglevel=0
