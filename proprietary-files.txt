@@ -880,7 +880,6 @@ vendor/lib64/libqmiservices.so|2e259463cbeb329caec303b642ab4068c8d10be5
 vendor/lib64/libqsocket.so|0817c4699f08d2595971f8103776a369bd15580d
 
 # Radio - from FP3-REL-6.A.020.0-gms-88126537-user
--system_ext/app/datastatusnotification/datastatusnotification.apk|abe3343065ffcfe3c315258831d073c6086139ae
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|341ac4f8b754883df97f2e9920f1e9a255a6a160
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
