@@ -195,7 +195,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gdxbacktrace \
     gdxunwind \
-    libshims_goodix \
+    libshimfp \
     libstdc++.vendor
 
 # FM

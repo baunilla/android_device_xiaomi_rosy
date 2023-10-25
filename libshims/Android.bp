@@ -31,7 +31,7 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libshims_goodix",
+    name: "libshimfp",
     srcs: ["PermissionCache.cpp"],
     compile_multilib: "64",
     vendor: true,
