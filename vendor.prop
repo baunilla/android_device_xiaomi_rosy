@@ -99,9 +99,6 @@ ro.vendor.builtin_fm_antenna_support=1
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
-# IORap
-ro.iorapd.enable=false
-
 # Media
 debug.stagefright.omx_default_rank=0
 vendor.audio.hw.aac.encoder=true
