@@ -767,8 +767,6 @@ vendor/lib/libadpcmdec.so|452d1123ab4e12c4444df33322f309e2ecc2e1e4
 vendor/lib/libsmwrapper.so|1376bf567a0a225d1ac8c623db4ace9a7e3804f7
 
 # Media - from FP3-REL-6.A.023.1-gms-497e9bef-user
-lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
-lib/libOmxMux.so|e444f3b38f7d2469ff3965243f93180f8fc18329
 system_ext/lib/extractors/libmmparserextractor.so|2e4430f1fffdf458ca48f9b27b54edfa50e3bd65
 system_ext/lib/libavenhancements.so|9372b77cbd6667a2144c55da1adf3859ae37f849
 system_ext/lib/libmmosal.so|1e32cc6c1d78ec7d6aa77499dd4c1601b2e52a94
